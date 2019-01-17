@@ -1,0 +1,47 @@
+
+/* =================================== */
+/*  */
+/* =================================== */
+
+
+
+#passage-battlecycle {
+	padding-right: 220px; 
+	
+	
+}
+
+
+
+
+/* AVATAR BOX */
+
+.battle_avatar {
+	width: 100px;
+	height: 30px;
+	overflow: hidden; 
+	position: absolute;
+	border: 1px silver solid; 
+	right: 10px; 
+	background: black; 
+	box-sizing: border-box;
+	font-size: 11px; 
+	padding: 0 5px; 
+	transition: .4s ease all;
+	opacity: 0.5;
+}
+.battle_avatar:hover {
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+

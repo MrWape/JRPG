@@ -1,0 +1,99 @@
+[  
+   {  
+      "id": "player",
+      "name": "You",
+      "lastName": "",
+      "age": 18,
+      "gender": "male",
+      "description": "A lone wanderer.",
+      "job": "wanderer",
+      "type": "player",
+      "subtype": "civilian",
+      "weapons": {
+      },
+      "clothes": {
+      },
+      "money": 50,
+      "inventory": [
+      ],
+      "traits": [
+		"fuggo"
+      ],
+      "stats": {  
+         "level": 1,
+		 "S": 5,
+		 "P": 8,
+		 "E": 5,
+		 "C": 5,
+		 "I": 5,
+		 "A": 5,
+		 "L": 5
+      },
+      "repro": {  
+         "mother": ""
+      }
+   },
+   {  
+      "id": "shipmind",
+      "name": "The Shipmind",
+      "lastName": "",
+      "age": 999,
+      "gender": "female",
+      "description": "A being engineered for millenia to serve as the core consciousness of an interstellar vessel.",
+      "job": "computer",
+      "type": "npc",
+      "subtype": "noble",
+      "weapons": {  
+      },
+      "clothes": {  
+      },
+      "money": 120,
+      "inventory": [
+      ],
+      "traits": [
+        "arrogant", "cruel"
+      ],
+      "stats": {
+		 "S": 1,
+		 "P": 10,
+		 "E": 5,
+		 "C": 7,
+		 "I": 10,
+		 "A": 2,
+		 "L": 10
+      },
+      "repro": {  
+
+      },
+	  "talk": {
+	  
+	  },
+	  "topics": {
+
+	"meet": "Shifter! I held little hope that you survived ((the_crash))! I am relieved that the mission can continue.",
+
+	"greet": "Hello, ___.|Greetings, shifter.|What is it now?|What do you need?",
+
+	"dunno": "I don't know anything about ___.|Nevermind that. Focus on the task at hand.|I'm not interested in ___. Don't bother me about that.",
+
+	"the_crash": "You know the circumstances of our initial planetfall, so there’s no reason to repeat them. The mid-descent explosion, however: I am still analyzing the data on that. I am not what I once was. Deliver to me the ((fragments)) of my body so I may be better able to do that. You too have been damaged, ((your status)) has been logged.",
+	
+	"your_status": "I see you’ve converted to an ((Om)) template, and I detect that you’ve regenerated recently. Your psionic and morphic abilities won’t be what they once were for quite some time, as you’re no doubt aware. Keep integrating Om biology and acclimatizing yourself to your new form to hasten your recovery.",
+	
+	"fighting_humans": "I’m sorry, “humans”? Don’t debase yourself by using their language so casually, ___. They are ((Om)). // Why do you need to fight them? ... Oh, I see, your mere presence ellicits a ((terror response)). Curious. // In any event, you appear weak enough at the moment that you may have a problem dealing with some of them, especially in larger numbers. I recommend integrating biology from the more resilient specimens to make yourself stronger for these encounters. // Don’t succumb to the temptation of using their weapons as a means of evening the odds… I would be obligated to report that such transgressions of decorum, which would have unfortunate consequences for you.",
+	
+	"terror_response": "Yes, this is a known issue. Your kind have evolved to sift psionic emissions from other consiousnesses, and adapt accordingly. You do it without even thinking. Typically lower intelligence minds are easy for you to access and manipulate psionically, but it has been witnessed that some species have eroded psionic faculties, perhaps due to longtime exposure to radiation from their entertainment devices. // The mere close proximity will send their minds into a feedback loop that will quickly resolve into a violent outburst of aggression. Their mind will become overwhelmed after a short while and will reset itself, the whole incident having been forgotten. // It’s likely that there are some among the ((Om)) who thusly degraded, and will perceive you as a normal human.",
+	
+	"Om": "Low-intelligence, low-energy, low-value lifeforms. There's a reason they've been left alone for so long: They have nothing of value to offer.|Dumb little hairless apes. They're gross and I hate them.|Look at the way they lumber around, pathetically ignorant of the greater universe.|I've been watching their televisual broadcasts. Reprehensible trash. Stupid stories that go nowhere and then obnoxious music plays for a few minutes.|Have you seen the females of the species? Bizzarre and impractical! Some of them have these large flesh orbs protruding from the front of their torsos. Om larva and the males of the species enjoy slobbering all over these for reasons I don't care to speculate on.",
+	
+	"impregnation": "Can you... impregnate them? No, of course not! That’s a disgusting thought. Your species has had seldom cause to perform such acts on its own, it’s unthinkable that the same could be successfully done - much less attempted - to another species. Why would you ask such a ludicrous question? Has your new form failed to develop its cognitive lobes completely?",
+	
+	"fragments": "I am durable even when scattered. Our setback is temporary, but you must find them. I’m re-attuning my ___ to better detect them, which will take time and energy. You will provide me with the latter.",
+	
+	"energy": "Until my OOOOOOOOOOOOOOOOOOOO is found, I will need your help acquiring energy for me. The thought of relying on you to absorb sustenance and then transfer it to me… well, it reminds me of the red-winged phlrk feeding a regurgitated jirk-worm to its hatchlings. I’m sorry for putting that image into your head. Believe me the shame is greater for me than it must be for you.",
+	
+	"escape": ""
+
+}
+   }
+]

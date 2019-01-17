@@ -1,0 +1,12 @@
+id,name,category,type,subtype,description,damage,damagetype,requirement,ammo,weight,weightcost,statuseffect,stats
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+shockclub,Shock Club,item,weapons,melee,A shocking baton.,,blunt,,,,,,L:33
+,Shotgun,item,weapons,ranged,A shotgun.,,normal,,,,,,A:55
+,Holy Sword,item,weapons,melee,A holy sword.,,blade,,,,,,S:44
+,Revolver,item,weapons,ranged,A revolver.,,,,,,,,E:11
+,Grenade,item,weapons,thrown,A hand grenade.,,,,,,,,E:33
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,

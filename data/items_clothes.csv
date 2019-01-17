@@ -1,0 +1,11 @@
+id,name,category,type,subtype,NOTES,AC,DT,DR,WT,$,stats,skills,weakvs,strongvs,requirement,effect,description
+,Chastity Belt,item,clothes,waist,,,,,,,"A:-2,horny:-1",fuck:-5,,,,,An inconvenient wrought-iron underwear.
+,P-Field Device,item,clothes,waist,,,2,10,2,,E:100,,,,,,A belt-mounted apparatus that generates a protection forcefield.
+,Mirror Shades,item,clothes,head,,,,,,,C:100,,,,,,"These shades make it easier to see, and look cool while doing so."
+scanner,Battle Scanner,item,clothes,head,souter,,,,,,P:2,,,,I:5,,An ancient device that projects battle data on a holographic overlay that covers one eye.
+leatherarmor1,Leather Armor,item,clothes,body,Leather armor,15,2,25,8,700,,,,,,,Armor made of leather.
+leatherarmor2,"Leather Armor, Enhanced",item,clothes,body,Leather armor Mk II,20,3,25,10,1000,,,,,,,"Armor made of leather, with enhanced durability."
+wanderergarb,Wanderer Garb,item,clothes,body,Leather jacket,8,0,20,5,250,S:-40,,,,,,"Leather jacket and jeans, basic attire suited for wanderers of the hellscape."
+chainmail,Chainmail Armor,item,clothes,body,new,13,3,27,30,0,"S:100,P:100",,,,,,
+supersuit,Superhero Suit,item,clothes,body,new,25,0,5,2,0,A:2,"talk:1,sneak:-2",,,,,Legends say that tight-fitting garments like these were worn by the greatest heroes of ancient times. (I'd be skeptical of that claim.)
+robes,Robes,item,clothes,body,Robes,5,0,20,10,0,P:-1,,fire,shock,,,Hooded robes made of colored cloth.

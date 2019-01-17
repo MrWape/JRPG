@@ -1,0 +1,150 @@
+[{
+		"id": "shack",
+		"name": "Survivalist's Shack",
+		"description": "A remote fenced-in compound the wilderness.",
+		"type": "dungeon",
+		"enemies": ["feraldog"],
+		"events": ["trap"],
+		"rumours": [
+			"Grrrrr.",
+			"Woof!",
+			"I hear ya moving around out there. Git off ma properteh!"
+		],
+		"map": [
+
+			"           ",
+			" ╔════════ E ════════╗ ",
+			" ║   █               ║ ",
+			" ║         █████████ ║ ",
+			" ║████     █B      █ ║ ",
+			" ║      ██████████ █ ║ ",
+			" ║         █     █ █ ║ ",
+			" ║ █████   █       █ ║ ",
+			" ║ █   █   █████ ███ ║ ",
+			" ║   █ █             ║ ",
+			" ║ █ █           ┌─ ─║ ",
+			" ║ █   █     2   │   ║ ",
+			" ║ █ █ █         │ 1 ║ ",
+			" ╚═══════════════════╝"
+
+		],
+		"points": {
+			"1": {
+				"message": "On the ground at your feet is a steel hatch"
+			},
+			"B": {
+				"message": "You come face-to-face with a grizzled old human. The old man points his rifle at you menacingly..."
+			},
+			"X": {
+				"message": "",
+				"action": ""
+			}
+		},
+		"areas": [
+			{
+				"name": "wilderness",
+				"message": "You are in a rocky wasteland.|The same landscape stretches on for miles.|'Beware of Dogs' reads a poorly-written mounted on the fence.",
+				"top": 0,
+				"left": 0,
+				"right": 22,
+				"bottom": 2
+			},
+			{
+				"name": "inner compound",
+				"message": "You are in a fenced-in area.|The sound of dogs barking and a radio playing in the distance warn of a present danger.|You are in enemy territory. Watch out for traps.|You just stepped in dog crap.",
+				"enemies": ["guarddog"],
+				"top": 2,
+				"left": 2,
+				"right": 22,
+				"bottom": 99
+			},
+			{
+				"name": "shack interior",
+				"message": "A radio is on somewhere, playing unfamiliar and unappealing music.|The walls are lined with shelves of canned food, ammo containers, etc.|There's a musty smell.|This place could use a dusting.",
+				"exclusive": true,
+				"top": 3,
+				"left": 11,
+				"bottom": 8,
+				"right": 19
+			},
+			{
+				"name": "fenced in area",
+				"message": "The shelter is clean, well-lit, and smells like lemon and pine.",
+				"exclusive": true,
+				"top": 10,
+				"left": 17,
+				"bottom": 12,
+				"right": 20
+			},
+			{
+				"name": "fallout shelter",
+				"message": "The shelter is clean, well-lit, and smells like lemon and pine."
+			}
+		],
+	"available": true
+	},
+
+
+
+
+
+
+	{
+	"id": "campsite",
+	"name": "Campsite",
+	"description": "The site of a small tent and campfire in the wilderness.",
+	"message": "The chirping of insects fills the air.|You hear the crackling of a fire nearby.|A gentle breeze rattles the branches of the trees.|You move slowly through the clearing, in spite of the pain.",
+	"type": "dungeon",
+	"rumours": [],
+	"map": [
+		"▲▲▲▲▲▲▲▲▲▲▲",
+		"▲▲E▲▲▲   ▲▲",
+		"▲▲     ▲4B▲",
+		"▲▲▲    ▲ ▲▲",
+		"▲    b   ▲▲",
+		"▲▲2  1  ▲ ▲",
+		"▲▲▲      ▲▲",
+		"▲▲▲▲▲▲▲▲▲▲▲"
+		],
+	"enemies": ["campers"],
+	"points": {
+		"1": {
+			"name": "campfire",
+			"icon": "triangle &#128770;",
+			"message": "A wood fire burns in a circle of stones."
+			},
+		"2": {
+			"name": "tent",
+			"icon": "xbox &#8999;",
+			"message": "A structure made of a thin material stretched over a frame of interconnected metal bars. It must be a temporary habitat for these creatures."
+			},
+		"4": {
+			"message": "A few steps from where you are, the larger creature faces a tree, the sound of a liquid splashing near his feet. It must be urinating."
+			},
+		"B": {
+			"icon": "female",
+			"message": ""
+			},
+		"b": {
+			"icon": "male",
+			"message": ""
+			}
+		},
+	"areas": [
+			{
+				"name": "girlzone",
+				"message": "You are near the female. She is gazing into the crackling fire, unaware of your presence.|The female's silhouette can be seen in the firelight.",
+				"top": 3, "left": 4, "right": 6, "bottom": 5
+			},
+			{
+				"name": "guyzone",
+				"message": "You sense the larger creature is nearby; a foul smell wafts in the air.|You sense a presence nearby.",
+				"top": 1, "left": 7, "right": 9, "bottom": 3
+			}
+		],
+	"available": true
+	}
+	
+	
+	
+]

@@ -1,0 +1,34 @@
+id,name,shortName,category,type,subtype,description,notes
+nextLevel,Next Level,Next,stat,,,The amount of XP to get to the next level.,next = (n*(n-1)/2) * 1000 XP
+carryweight,Carry Weight,Max Wt,stat,,,How much you can carry.,i=25+(S*25)
+fertile,Fertility,Fer,stat,,,How fertile you are. Determines the likelihood of impregnation during sex.,
+partylimit,Party Limit,Party Size,stat,,,How many people you can have in your party.,floor(C/2)
+skillrate,Skill Growth Rate,SGR,stat,,,The rate at which your skills improve.,2*P
+weight,Weight,Wt,stat,,,How much you are carrying.,
+rangedamage,Range Damage,RD,stat,,,How much base damage you do with ranged weapons,"i=max(1,P-5)"
+combatsequence,Combat Sequence,CS,stat,,,How fast you are to act in combat.,
+L,Luck,L,stat,base,,How fortunate you are.,
+E,Endurance,E,stat,base,,How much stamina you have.,
+C,Charisma,C,stat,base,,How charismatic you are.,
+I,Intelligence,I,stat,base,,How smart you are.,
+S,Strength,S,stat,base,,How strong you are.,
+P,Perception,P,stat,base,,How observant you are.,
+A,Agility,A,stat,base,,How agile you are.,
+criticalchance,Critical Chance,Crit%,stat,dam,,The change of scoring a critical hit.,i=Luck*1
+damagethreshold,Damage Threshold,DT,stat,dam,,How much damage is blocked by armor.,"AdjustedDamage = max(0, BaseDamage-DT)"
+damageresistance,Damage Resistance,DR,stat,dam,,How much damage is reduced by armor.,"FinalDamage = max(1, AdjustedDamage * ((100-min(DR,90))/100) )"
+meleedamage,Melee Damage,MD,stat,dam,,How much base damage you do in melee combat.,"i=max(1,S-5)"
+evade,Evade,EV,stat,dam,,How likely you are to evade an attack.,i=A %
+criticalmultiplier,Critical Multiplier,CritX,stat,dam,,How powerful your critical hits are.,
+radiationresistance,Radiation Resisance,RadRes,stat,dam,,"How much you can resist radiation,  emissions and other forms of obtrusive energy.",E*2
+poisonresistance,Poison Resistance,PoiRes,stat,dam,,"How much you can resist toxicity, poisons, and other biological impediments.",E*5
+mentalresistance,Mental Resistance,PsiRes,stat,dam,,How resistant you are to psychological or psionic manipulation.,I*2+C
+horny,Horniness,Hor,stat,m,,"How horny you are. The hornier you are, the less focused you are and the more susceptible you are to seduction.",
+ap,AP,AP,stat,m,,Your action points.,
+hp,HP,HP,stat,m,,Your hit points.,
+pp,Psi,Pat,stat,m,,Your patience for certain interactions.,
+hpmax,Max HP,MaxHP,stat,max,,Your maximum hit points. Determined by Endurance and Level.,"i=15+S+2*E, levUp = 2+(E/2)"
+ppmax,Max Patience,MaxPat,stat,max,,Your maximum patience. Determined by Intelligence.,i=1+floor[I/2]
+apmax,Max AP,MaxAP,stat,max,,Your maximum action points. Determined by Agility.,i=5+floor[A/2]
+level,Level,Lev,stat,up,,The level you are at.,next = (n*(n-1)/2) * 1000 XP
+xp,XP,XP,stat,up,,How much experience points you've acrrued.,

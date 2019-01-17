@@ -1,0 +1,46 @@
+[
+   {
+      "id":"player",
+      "name":"Player",
+      "lastName":"One",
+      "age":18,
+      "gender":"male",
+      "description":"A lone wanderer.",
+      "job":"wanderer",
+      "type":"player",
+      "subtype":"civilian"
+   },
+   {
+      "id":"adolphus",
+      "name":"Adolphus",
+      "lastName":"Hermann",
+      "age":45,
+      "gender":"male",
+      "description":"An odd man.",
+      "job":"Travelling Merchant",
+      "type":"npc",
+      "subtype":"civilian"
+   },
+   {
+      "id":"matilda",
+      "name":"Matilda",
+      "lastName":"Hermann",
+      "age":15,
+      "gender":"female",
+      "description":"A merchant's daughter.",
+      "job":"Travelling Merchant",
+      "type":"npc",
+      "subtype":"civilian"
+   },
+   {
+      "id":"ralph",
+      "name":"Ralph",
+      "lastName":"Roth",
+      "age":45,
+      "gender":"male",
+      "description":"An odd man.",
+      "job":"Travelling Merchant",
+      "type":"npc",
+      "subtype":"civilian"
+   }
+]

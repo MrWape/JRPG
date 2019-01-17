@@ -1,0 +1,34 @@
+id,name,category,type,subtype,description,notes,baseStats
+,,skill,,,,,
+,,skill,,,,,
+,,skill,,,,,
+,,skill,,,,,
+,,skill,,,,,
+,,skill,,,,,
+,,skill,,,,,
+,,skill,,,,,
+,,skill,,,,,
+,,skill,,,,,
+,,skill,,,,,
+,,skill,,,,,
+,,skill,,,,,
+,,skill,,,,,
+,,skill,,,,,
+,,skill,,,,,
+fuck,Fucker,skill,x,,How well you can please a partner sexually.,,"A,E"
+run,Runner,skill,phys,,"How far and fast you can run, to flee combat or travel quickly.",,"A,E"
+sneak,Sneak,skill,phys,,"How well you can evade detection, pick pockets, avoid combat, and generally go unnoticed.",,"A,P"
+flirt,Player,skill,social,,How skilled you are at arousing others and convincing them to have sex with you.,,"C,C"
+talk,Talker,skill,social,,"How well you converse with others. Influence, interrogate, threaten and amuse.",,"C,I"
+drug,Chemist,skill,sci,,How experienced you are at creating and using drugs. This includes chems and alcohol.,,"E,I"
+roam,Traveller,skill,sci,,"How well you travel the hellscape. Find interesting locations, manage survival resources, evade enemies and travel faster.",,"E,P"
+fight,Fighter,skill,combat,,How well you can fight in hand-to-hand combat.,,"E,S"
+heal,Healer,skill,sci,,How well you can heal yourself and others.,,"I,A"
+hack,Hacker,skill,,,"How well you work with electornic tech, including computers and robots.",,"I,I"
+barter,Merchant,skill,social,,How well you can haggle with others and secure better prices and rewards.,,"I,C"
+bio,Biologist,skill,,,,,"I,P"
+shoot,Marksman,skill,combat,,How well you can shoot with guns and other ranged weapons.,,"P,P"
+mech,Tinkerer,skill,,,"How well you work with mechanical tech, including machines, guns, and locks.",,"P,A"
+throw,Pitcher,skill,phys,,"How hard and how accurately you can throw things. Toss bombs and knives at enemies, pass items to allies, and throw held enemies.",,"P,S"
+hold,Wrestler,skill,combat,,"How well you can grab, hold, and otherwise subdue an enemy.",,"S,E"
+wield,Swordsman,skill,combat,,How well you can fight with melee weapons.,,"S,A"

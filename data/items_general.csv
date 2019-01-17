@@ -1,0 +1,9 @@
+id,name,category,type,subtype,description,damage,damagetype,requirement,ammo,weight,cost,statuseffect,stats
+,,,,,,,,,,,,,
+rapefruit,Rapefruit,item,use,drug,A desert fruit. Caution: Those who imbibe it turn into ravanous slaves to their own lust. Dangerous in the wrong hands.,,,,,,,,
+,,,,,,,,,,,,,
+,Mag Cuffs,item,misc,binds,Heavy electromagnetic wrist shackles that are said to be inescapable.,,,,,,,,
+,,,,,,,,,,,,,
+vhstape,VHS tape,item,misc,loot,An ancient plastic tome of unknowable analog mysteries.,,,,,,,,
+condom,Condom,item,misc,condom,"A sheath-shaped device designed to reduce the risk of sexually transmitted disease, pregnancy, and fun.",,,,,,,,
+biospray,Bio-Spray,item,use,heal,A Ultrasporin-brand aerosol healing spraycan. They stopped making this stuff a long time ago.,,,,,,,,

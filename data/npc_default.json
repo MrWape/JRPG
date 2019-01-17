@@ -1,0 +1,70 @@
+[  
+   {  
+      "id":"default",
+      "name":"",
+      "lastName":"",
+      "age":999,
+      "gender":"",
+      "description":"...",
+      "job":"",
+      "type":"",
+      "subtype":"",
+      "weapons":{  
+         "melee":"",
+         "ranged":"",
+         "thrown":""
+      },
+      "clothes":{  
+         "body":"",
+		 "head":"",
+		 "waist":"",
+		 "misc":""
+      },
+      "money":0,
+      "inventory":[],
+      "traits":[],
+      "stats":{  
+		"FZZ": 0,
+		"HZZ": 0,
+		"combatsequence": 0,
+		"partylimit": 0,
+		"skillrate": 0,
+		"L": 0,
+		"E": 0,
+		"C": 0,
+		"I": 0,
+		"S": 0,
+		"P": 0,
+		"A": 0,
+		"criticalmultiplier": 0,
+		"criticalchance": 0,
+		"evade": 0,
+		"damagethreshold": 0,
+		"damageresistance": 0,
+		"meleedamage": 0,
+		"rangedamage": 0,
+		"radiationresistance": 0,
+		"poisonresistance": 0,
+		"mentalresistance": 0,
+		"ap": 0,
+		"hp": 0,
+		"pp": 0,
+		"hpmax": 0,
+		"ppmax": 0,
+		"apmax": 0,
+		"level": 0,
+		"nextLevel": 0,
+		"xp": 0,
+		"weight": 0,
+		"weightmax": 0
+      },
+      "repro":{  
+         "mother":"",
+         "father":"",
+		 "offspring":[],
+		 "ancestry":[], /* act and rel */
+		 "pZZZ":0,
+		 "pZZZact":"", /* cause */
+		 "pZZZknown":"", /* known Ycro */
+      }
+   }

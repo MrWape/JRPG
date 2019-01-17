@@ -1,0 +1,15 @@
+id,name,description,Number of Moons,Rings,URI
+1,Sun,Star,0,false,http://en.wikipedia.org/wiki/Sun
+2,Mercury,Terrestrial planet,0,false,http://en.wikipedia.org/wiki/Mercury_(planet)
+3,Venus,Terrestrial planet,0,false,http://en.wikipedia.org/wiki/Venus
+4,Earth,Terrestrial planet,1,false,http://en.wikipedia.org/wiki/Earth
+5,Mars,Terrestrial planet,2,false,http://en.wikipedia.org/wiki/Mars
+6,Jupiter,Gas giant,63,true,http://en.wikipedia.org/wiki/Jupiter
+7,Saturn,Gas giant,62,true,http://en.wikipedia.org/wiki/Saturn
+8,Uranus,Gas giant,27,true,http://en.wikipedia.org/wiki/Uranus
+9,Neptune,Gas giant,13,true,http://en.wikipedia.org/wiki/Neptune
+10,Ceres,Dwarf planet,0,false,http://en.wikipedia.org/wiki/Ceres_(dwarf_planet)
+11,Pluto,Dwarf planet,3,false,http://en.wikipedia.org/wiki/Pluto
+12,Haumea,Dwarf planet,2,false,http://en.wikipedia.org/wiki/Haumea_(dwarf_planet)
+13,Makemake,Dwarf planet,0,false,http://en.wikipedia.org/wiki/Makemake_(dwarf_planet)
+14,Eris,Dwarf planet,1,false,http://en.wikipedia.org/wiki/Eris_(dwarf_planet)
