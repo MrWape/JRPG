@@ -1,0 +1,380 @@
+
+
+
+
+
+/* =================================== */
+/* CHARACTER SHEET */
+/* =================================== */
+
+.character_sheet {
+	padding: 0em;
+	margin-bottom: 7px;
+	background: var(--semitransparent-bg-color);
+}
+
+.character_sheet .section {
+	margin-bottom: 7px;
+	background: rgba(0,0,0, 0.3);
+}
+.character_sheet .pic img {
+	width: 150px;
+	height: 150px;
+}
+
+.character_sheet .heading {
+	font-family: var(--title-font);
+	font-size: 1.3em;
+	padding: 0em; 
+}
+
+.character_sheet .subheading {
+	font-family: var(--main-font);
+	font-size: 0.7em;
+	display: inline;
+}
+
+.character_sheet .description {
+	
+}
+
+.character_sheet .pic {
+	float: left;
+	margin-right: 20px;
+}
+
+
+.character_sheet h3 {
+	border-bottom: 5px white solid;
+    margin: 0 0 1em 0;
+    padding: 5px 0;
+	
+}
+
+
+
+
+
+
+/* =================================== */
+/* INDICATORS */
+/* =================================== */
+
+
+
+.percentBar {
+	width: 120px;
+	_max-width: 70%;
+	height: 10px;
+	background-color: black; 
+	box-sizing: content-box;
+	position: relative;
+	overflow: visible;
+	
+    display: inline-block;
+    border: 1px solid white;
+    padding: 1px;
+	
+	
+	font-family: var(--title-font);
+	font-size: 10px; 
+	font-weight: normal;
+	color: var(--main-text-color);
+	letter-spacing: 2px;
+	text-shadow: 0 0 0 black, 1px 1px 0 black, 1px 1px 0 black, 1px 1px 0 black;
+}
+
+.percentBar .innerBar {
+	position: relative; 
+	background-color: silver; 
+	max-width: 100%; 
+	height: 100%;
+	overflow: hidden; 
+	opacity: 0.9;
+	z-index: 10;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-bottom: 2px solid rgba(0,0,0,0.2);
+	box-sizing: border-box;
+}
+.percentBar .label {
+	top: -2px;
+	left: 6px;
+	position: absolute; 
+	z-index: 18;
+}
+
+.percentBar.minimal {
+	padding: 0;
+	width: 3em;
+	height: 7px;
+	border-color: var(--main-text-color); 
+}
+.percentBar.minimal .innerBar {
+	background-color: var(--main-text-color); 
+	border: 0px;
+}
+
+
+.percentBar.prominent {
+	border: 2px solid white;
+	padding: 2px;
+	height: 16px;
+	font-size: 1.1em;
+}
+.percentBar.minimal .label,
+.percentBar.notext .label {
+	display: none;
+}
+
+
+.percentBar.red .innerBar {
+	background-color: red; 
+}
+.percentBar.blue .innerBar {
+	background-color: blue; 
+}
+.percentBar.green .innerBar {
+	background-color: green; 
+}
+.percentBar.yellow .innerBar {
+	background-color: yellow; 
+}
+
+
+
+
+
+
+
+
+
+
+/*
+.percentBar .innerTxt,
+.percentBar .underTxt {
+	top: 0px;
+	left: 5px;
+}
+.percentBar .innerTxt {
+	position: relative; 
+	color: black;
+	z-index: 13;
+}
+.percentBar .underTxt {
+	position: absolute; 
+	color: white;
+	z-index: 11;
+}
+*/
+
+
+
+
+.amountBar {
+	content: "JUST ICONS";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.talkNPC img {
+	border: 0em solid red;
+}
+
+
+.spriteholder {
+	max-width: 200px;
+}
+
+.talkNPC .spriteholder {
+	float: right; 
+}
+
+
+
+.options ul {
+	list-style: none; 
+}
+
+.options ul li a:before {
+	content: "\00BB \0020";
+}
+
+
+
+
+
+
+/* DIALOGUE */
+
+POV, GIRL, MAN, GUY, NPC {
+	display: block;
+	margin-bottom: 1em; 
+	_quotes: "“" "”" "‘" "’";
+}
+POV:before, GIRL:before, MAN:before, GUY:before, NPC:before {
+	content:"&quot;";
+	content: open-quote;
+}
+POV:after, GIRL:after, MAN:after, GUY:after, NPC:after {
+	content:"&quot;";
+	content: close-quote;
+}
+
+
+
+
+
+
+
+
+.maxWidth {
+	max-width: 100%;
+	overflow-y: scroll;
+    overflow-x: hidden;
+	}
+
+
+
+
+.cash, .money {
+	color: #7f7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================== */
+/* MAP */
+/* =================================== */
+
+#map {
+	border: 2px var(--computer-color) solid;
+	box-sizing: content-box; 
+	padding: 4px;
+	float: right;
+	width: 512px;
+	height: 512px;
+	background-color: var(--semitransparent-bg-color);
+	position: relative;
+	
+	_color:black;
+	text-shadow: none;
+	_font-weight: bold;
+	
+	_font-size: 1.5em;
+}
+#map * {
+	font-family: Courrier, monospace;
+	color: var(--computer-color);
+}
+
+#map .inner {
+	position: relative;
+}
+
+#map .marker {
+	position: absolute;
+}
+
+#map .icon {
+	color: var(--computer-color);
+	text-align: center;
+	font-weight: bold;
+	width: 26px; height: 26px;
+	box-sizing: border-box;
+	background-color: var(--computer-color-dim);
+	border-radius: 30px; 
+	padding: 5px; 
+}
+#map .known .icon {
+	color:black;
+	background-color: var(--computer-color);
+}
+
+#map .popup {
+	text-align: right;
+	position: absolute;
+	top: 0px;
+	right: 32px;
+	width: 128px;
+	_padding: 0.5em 1em;
+	background-color: var(--semitransparent-bg-color);
+	border:1px solid white;
+}
+#map .popup .title {
+	text-transform: uppercase;
+}
+
+
+#map .marker .popup {
+	_display: none;
+}
+#map .marker:hover .popup {
+	display: block;
+}
+
+
+
+
+
+#directions {
+	text-align:center;
+	width: 400px;
+	font-size: 150%
+}
+
+#directions > button {
+}
+
+#directions > button > a {
+	width: 52px; 
+	height: 52px;
+	display: block;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

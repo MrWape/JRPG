@@ -1,0 +1,238 @@
+
+/* =================================== */
+/* MAP */
+/* =================================== */
+
+
+:root {
+	--map-font: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	--map-color: #0d0;
+	--map-color-dim: #050;
+	--map-color-bg: #000;
+	--map-color-off: #333;
+	--map-color-alert: #f00;
+}
+
+
+.dungeon_map {
+	font-size: 2.5em;
+	font-family: var(--map-font); 
+	float: right; 
+	border: 2px solid var(--map-color);
+	color: var(--map-color);
+	margin: 10px 10px 30px 30px;
+}
+.dungeon_map table {
+	min-width: auto;
+	margin: 2px;
+    border: 1px solid var(--map-color);
+}
+.dungeon_map table td {
+	padding: 0;
+	width: 16px;
+	height: 16px; 
+	overflow: hidden;
+    line-height: 12px;
+    vertical-align: middle;
+	background: var(--map-color-bg);
+}
+.dungeon_map table td > span {
+	transform: scaleY(0.6);
+	display: inline-block;
+}
+
+.dungeon_map .auto0 /* unknown */ {
+	color: var(--map-color-dim);
+	opacity: 0.3;
+}
+.dungeon_map .auto1 /* known */ {
+	color: var(--map-color-dim);
+}
+.dungeon_map .auto2 /* seen */ {
+	color: var(--map-color);
+}
+.dungeon_map .auto3 /* .visited */ {
+	color: var(--map-color);
+}
+.dungeon_map .player {
+	background-color: var(--map-color-alert);
+	color: var(--map-color-bg);
+	text-shadow: none; 
+}
+
+
+
+
+
+
+#navigation {
+	width: 150px; 
+	height: 150px; 
+	border: 2px solid var(--map-color);
+	box-sizing: content-box;
+	padding: 2px;
+
+	font-size: 1.5em;
+	font-family: var(--map-font); 
+	color: var(--main-text-color);
+	text-shadow: none;
+
+	position: absolute;
+	bottom: 10px;
+}
+#navigation .inner {
+	position: relative;
+	left: 1px;
+	top: 1px;
+}
+#navigation .go {
+	background: var(--map-color-off);
+	position: absolute; 
+	padding: 0;
+	_width: 50px;
+	_height: 50px;
+	_box-sizing: content-box;
+}
+
+#navigation a {
+	background: var(--map-color-dim);
+	color: var(--map-color-bg);
+}
+#navigation a:hover {
+	background: var(--map-color);
+	color: var(--map-color-bg);
+}
+
+#navigation .N { top: 00px; left: 50px }
+#navigation .S { top: 100px; left: 50px }
+#navigation .E { top: 50px; left: 100px }
+#navigation .W { top: 50px; left: 0px }
+
+
+
+#navigation a {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	padding: 15px 0; 
+    box-sizing: border-box;
+	display: block; 
+	border: 1px solid var(--map-color);
+}
+#navigation > a:hover {
+	background-color: var(--color1);
+}
+
+
+.clear {
+	clear:both;
+}
+
+
+
+/*
+#map {
+	border: 2px var(--computer-color) solid;
+	box-sizing: content-box; 
+	padding: 4px;
+	float: right;
+	width: 512px;
+	height: 512px;
+	background-color: var(--semitransparent-bg-color);
+	position: relative;
+	
+	_color:black;
+	text-shadow: none;
+	_font-weight: bold;
+	
+	_font-size: 1.5em;
+}
+#map * {
+	font-family: Courrier, monospace;
+	color: var(--computer-color);
+}
+
+#map .inner {
+	position: relative;
+}
+
+#map .marker {
+	position: absolute;
+}
+
+#map .icon {
+	color: var(--computer-color);
+	text-align: center;
+	font-weight: bold;
+	width: 26px; height: 26px;
+	box-sizing: border-box;
+	background-color: var(--computer-color-dim);
+	border-radius: 30px; 
+	padding: 5px; 
+}
+#map .known .icon {
+	color:black;
+	background-color: var(--computer-color);
+}
+
+#map .popup {
+	text-align: right;
+	position: absolute;
+	top: 0px;
+	right: 32px;
+	width: 128px;
+	_padding: 0.5em 1em;
+	background-color: var(--semitransparent-bg-color);
+	border:1px solid white;
+}
+#map .popup .title {
+	text-transform: uppercase;
+}
+
+
+#map .marker .popup {
+	_display: none;
+}
+#map .marker:hover .popup {
+	display: block;
+}
+
+
+
+
+
+#directions {
+	text-align:center;
+	width: 400px;
+	font-size: 150%
+}
+
+#directions > button {
+}
+
+#directions > button > a {
+	width: 52px; 
+	height: 52px;
+	display: block;
+	float: left;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

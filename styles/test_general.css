@@ -1,0 +1,401 @@
+
+
+
+:root {
+  --blue: #29d;
+  --red: #911;
+  --green: #191;
+  --yellow: #ec2;
+  
+  --color_bar_bg: #5A0000;
+  --darken: rgba(0,0,0,0.7);
+  --lighten: rgba(255,255,255,0.7);
+  
+  --img_url: "can't do this";
+}
+
+
+body {
+	background-image: url('C:/Users/sketc/Documents/GitHub/JRPG/images/tiles/granite.jpg');
+}
+
+
+
+
+
+/* SIDEBAR */
+
+/* fancy sidebar with the lady, 
+#ui-bar::after {
+  content: "";
+  background: url('../images/misc/sidebar.png') no-repeat -0px -00px;
+  opacity: 1.0;
+  transition: opacity 0.5s;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: -1;
+  width: 420px;
+  height: 100%;
+  pointer-events: none
+}*/
+
+#ui-bar {
+  overflow: hidden;
+  background: none;
+  border: none; 
+  _width: 250px; /* was 280px; */
+  z-index: 999;
+  background-color: var(--darken);
+}
+#story-caption {
+ 	margin-top: 0em; 
+}
+
+#story-title,
+#ui-bar-history {
+	display: none;
+}
+
+#menu-story a,
+#menu li a {
+    background: var(--color-bg-semitrans);
+}
+#menu-story a:hover,
+#menu li a:hover {
+	background: var(--color-accent-alt);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GENERAL */
+
+img		{ max-width: 100%; }
+
+small	{ font-size: 80%; }
+smaller	{ font-size: 60%; }
+smallest{ font-size: 40%; }
+
+big 	{ font-size: 120%; }
+bigger 	{ font-size: 140%; }
+biggest	{ font-size: 160%; }
+
+.no-transition.passage-in { opacity: 1; }
+/*naff .passage.notransition { transition: none; -webkit-transition: none; -moz-transition: none; } */ 
+
+img {
+}
+img:after { 
+  content: "(url: " attr(src) attr(alt) attr(class) ")";
+  display: block;
+  border: 1px dotted crimson; 
+  background: rgba(255,0,0,.5)
+  font-size: .7em;
+}
+
+img.dim {
+  max-width: 100%;
+  height: auto; 
+  opacity: 0.5;
+  min-width: 50px; 
+  min-height: 50px; 
+  border: 3px solid black;
+  background: #333; 
+  transition: opacity 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INDICATORS */
+
+.health_bar.round .frame,
+.health_bar.round .unfill,
+.health_bar.round .fill {
+  border-radius: 10px;
+  transform: scale(2) left top;
+}
+
+.health_bar {
+  --on: white;
+  --off: black;
+  --text: var(--on);
+  max-width: 200px;
+  margin: .2em 0; 
+  position: relative; 
+}
+.health_bar .label {
+  color: var(--on);
+  position: absolute; 
+  top: 1px;
+  left: 6px;
+  text-shadow: -1px -1px 0 var(--off), 1px 1px 0 var(--off), -1px 1px 0 var(--off), 1px -1px 0 var(--off);
+  font-size: 10px;
+}
+.health_bar .label * {
+  color: var(--text);
+  font-style: normal !important;
+  font-weight: bold;
+  text-transform: uppercase; 
+}
+.health_bar .label i:after {
+  content: "  ";
+}
+.health_bar .frame {
+  border: 1px solid var(--on); 
+  padding: 2px;
+  width: 100%; 
+  box-sizing: border-box;
+  background: var(--off); 
+}
+.health_bar .unfill,
+.health_bar .fill {
+  height: 11px; 
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden; 
+}
+.health_bar .fill {
+  background: var(--on); 
+}
+.health_bar .unfill {
+}
+
+
+
+.health_bar.fancy {
+  --off: rgba(90,0,0,1);
+  --height: 12px;
+  --lite: rgba(255,255,255,0.5);
+  --dark: rgba(0,0,0,0.5);
+  max-width: 200px;
+  margin: .2em 0; 
+}
+.health_bar.fancy * {
+  --color: var(--green);  --color_lite: #1f1; --color_dark: #151;
+}
+.health_bar.fancy.blue * {
+  --color: var(--blue);  --color_lite: #0fc; --color_dark: #22c;
+}
+.health_bar.fancy.red * {
+  --color: var(--red);  --color_lite: #f42; --color_dark: #603;
+}
+.health_bar.fancy.yellow * {
+  --color: var(--yellow);  --color_lite: #ff0; --color_dark: #731;
+}
+.health_bar.fancy .label {
+  color: var(--on); 
+  position: absolute; 
+  left: 5px; top: -1px; 
+  font-size: 12px;
+  text-shadow: 1px 1px 0 black;
+}
+.health_bar.fancy .label i { display:none; font-weight: normal; }
+.health_bar.fancy:hover .label i { display:inline; }
+.health_bar.fancy .frame {
+  padding: 1px;
+  background: var(--color_bar_bg);
+  box-shadow: -2px -2px 3px var(--darken) inset;
+  box-shadow: -4px -2px 6px var(--darken) inset;
+}
+.health_bar.fancy .fill {
+  height: calc(var(--height) - 1px);
+  background-color: var(--color);
+  border: 1px solid var(--color);
+  _border: 1px solid var(--color_dark);
+  box-shadow: 0px 2px 0px var(--color_lite) inset, 
+	-2px -2px 4px var(--color_dark) inset, 
+	2px 0px 4px var(--darken);
+}
+
+
+.health_bar.minimal {
+  --height: 6px;
+  max-width: 200px;
+  margin: .2em 0; 
+}
+.health_bar.minimal .label {
+  display: none; 
+}
+.health_bar.minimal .frame {
+  padding: 0px;
+}
+.health_bar.minimal .unfill {
+  height: var(--height);
+}
+.health_bar.minimal .fill {
+  height: var(--height);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TOOLTIPS */
+
+.tipholder {
+  display: inline-block;
+  position: relative;
+  text-decoration: underline var(--lighten);
+  cursor: help;
+  user-select: none; 
+}
+.tipholder:hover {
+  color: #fff;
+}
+.tip {
+  display: block;
+  position: absolute;
+  border: 1px solid silver;
+  background: rgba(0,0,0,.7);
+  padding: 5px 10px;
+  font-size: .7em;
+  text-align: center; 
+  z-index: 9999;
+  max-width: 400px;
+  min-width: 100px;
+  overflow: hidden;
+  transform: scale(0.01) translate(0,0);
+  opacity: 0.0;
+  transition: transform .2s ease, opacity .2s ease;
+}
+.tipholder:hover .tip {
+  transform: scale(1.0) translate(2em,1em);
+  opacity: 1;
+}
+.tipholder:active .tip {
+  transform: scale(1.5) translate(2em,2em);
+  opacity: 1;
+}
+
+
+
+
+
+/* MISC */
+
+
+* {
+  line-height: 1.5em;
+}
+.clear {
+  clear: both;
+}
+
+
+
+
+
+
+/* DEBUGGERY */
+
+debug {
+  display: none;
+  background: #303;
+}
+note {
+  display: none;
+  background: #033;
+}
+error {
+  display: none;
+  background: #600;
+}
+debug, note, error {
+  display: block;
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+  color: silver;
+}
+d {
+  display: inline;
+  display: none; 
+  font-size: .7em;
+  position: relative;
+  top: -6px;
+}
+d::before { content: " {"; }
+d::after  { content: "}"; }
+
+/* array.display() */
+
+.displayBox {
+  border: 1px solid #888;
+  margin: .5em 0; 
+  font-size: .8em;
+}
+.displayTitle {
+  background: #888; 
+  color: black; 
+  font-weight: bold; 
+  _display: inline-block; 
+  padding: 2px 5px; 
+  font-size: .8em;
+}
+.displayItem {
+  border-right: 1px dotted #888; 
+  padding: 0 10px;
+  display: inline-block; 
+}
+.displayItemBreak {
+  text-align: center; 
+  padding: 2px 0px;
+  display: block; 
+}
+  
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

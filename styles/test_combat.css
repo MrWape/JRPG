@@ -1,0 +1,234 @@
+
+:root {
+  --darken: rgba(0,0,0,0.7);
+  --lighten: rgba(255,255,255,0.7);
+  
+  --puppetshow_height: 200px;
+  --puppet_height: 200px;
+  --puppet_width: 150px;
+  
+}
+
+
+
+.macro_image {
+	min-width: 32px;
+	min-height: 32px;
+}
+
+
+
+.combat #story {
+	margin:0;
+}
+
+
+
+
+
+/* FIGHT SCREEN */
+
+.readout,
+.team_box {
+ float: left; 
+ box-sizing: border-box; 
+ height: 300px; 
+}
+
+
+.readout {
+ overflow-x: hidden; 
+ overflow-y: scroll; 
+ width: 50%; 
+}
+.readout ol {
+  padding: 0;
+  margin:  0;
+  list-style: none;
+  counter-reset: small-number-counter;
+  position: relative;
+}
+.readout ol li {
+  counter-increment: small-number-counter;
+  margin: 0 0 .2em 1em;
+  _padding: .2em .6em;
+  padding: 0;
+}
+/*
+.readout ol li::before {
+  content: counter(small-number-counter) "";
+  color: grey;
+  font-size: .7em; 
+  position: absolute;
+  left: 0px; 
+}
+*/
+.readout ol li { color: #ccc; opacity: 0.2; }
+.readout ol li:nth-last-child(5) { opacity: 0.3; }
+.readout ol li:nth-last-child(4) { opacity: 0.4; }
+.readout ol li:nth-last-child(3) { opacity: 0.5; }
+.readout ol li:nth-last-child(2) { opacity: 0.6; }
+.readout ol li:last-child {
+  opacity: 1 !important; 
+  color: #fff;
+}
+
+
+
+
+
+.team_box {
+  width: 25%; 
+}
+.team_box .unit_box {
+  margin-bottom: .5em; 
+  width: 80%; 
+  padding: .3em .5em;
+  position: relative;
+  box-sizing: border-box; 
+}
+.team_box.A .unit_box {
+  text-align: left; 
+  float: left; 
+  background-color: rgba(55,155,255, 0.2); 
+}
+.team_0 {  background-color: rgba(55,155,255, 0.4); }
+
+.team_box.B .unit_box {
+  text-align: right; 
+  float: right;
+  background-color: rgba(255,0,0, 0.2);
+}
+.team_1 { background-color: rgba(255,0,0, 0.4); }
+
+
+.next {
+  _border: 1px solid gold; 
+  _margin-left: 1em;
+  _margin-right: 1em; 
+  background-color: #35a !important;
+}
+.active { border: 1px dotted gold; }
+.last 	{ border: 1px dotted black; }
+.dead 	{ background-color: rgba(111,111,111, 0.2) !important; opacity: 0.5 }
+.target { border: 1px dotted red;  }
+
+.type_NPCs 		{ color: orange; }
+.type_Creatures	{ color: silver; }
+
+
+
+
+
+
+
+
+
+
+
+/* SPRITES */
+
+.img_form {
+}
+
+.sprite_box.full_width {
+	width: 100vw;
+	height: 100vh;
+    position: fixed;
+    left: 0px;
+    top: -2em;
+	z-index: -300; 
+}
+
+
+
+.sprite_box {
+  z-index: 333;
+  _pointer-events: none;
+  width: 100%;
+  height: var(--puppetshow_height);
+  margin: 20px auto;
+  border-top: 2px solid silver;
+  border-bottom: 2px solid silver;
+  position: relative;
+  background-image: url('C:/Users/sketc/Documents/GitHub/JRPG/images/bg/ruins.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  overflow: hidden;
+}
+.sprite_box:active {
+  overflow: visible;
+}
+.sprite_box .team {
+  position: absolute;
+  bottom: -.5em;
+  width: 50%;
+  height: var(--puppetshow_height);
+}
+.sprite_box .team.A {
+  left: 0;
+  transform: scaleX(-1);
+}
+.sprite_box .team.A .text {
+  transform: scaleX(-1);
+}
+.sprite_box .team.B {
+  right: 0;
+}
+.sprite_box .sprite_holder {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+	width: 150px;
+	height: auto; 
+	overflow: visible;
+}
+.sprite_box .sprite_holder .img_form  {
+   height: var(--puppetshow_height);
+   width: auto;
+   max-width: none;
+}
+.sprite_box .sprite_holder .label {
+    position: absolute;
+    left: 30%;
+	border: 1px dotted silver;
+	background: black;
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ANIMATIONS */
+
+.unit_box.active { animation: pulse 0.3s linear 0.1s 1; }
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1.0); }
+  30%      { transform: scale(1.1); }
+}
+
+.unit_box.nodamage { animation: shake 0.3s linear 0.5s 1; }
+.unit_box.miss     { animation: shake 0.6s linear 0.5s 1; }
+.unit_box.hit      { animation: shake 0.1s linear 0.5s 4; }
+.unit_box.hit.dead { animation: shake 0.1s linear 0.5s 19; }
+
+@keyframes shake {
+  0%, 100% { transform: translate(-1px, 3px); }
+  50%      { transform: translate( 1px,-3px); }
+}
+
+
+
+
+
+
+
