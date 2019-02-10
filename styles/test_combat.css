@@ -6,8 +6,9 @@
   --puppetshow_height: 200px;
   --puppet_width: 150px;
   --puppet_xoff: 90px;
+  --puppet_range: -600px;
   
-  --readout_height: 450px;
+  --readout_height: 250px;
   
   --bg_ruins: url('C:/Users/sketc/Documents/GitHub/JRPG/images/bg/ruins.jpg');
   --bg_ruins: url('../images/bg/ruins.jpg');
@@ -199,10 +200,16 @@
 .sprite_box .u7 { right: calc(6 * var(--puppet_xoff)); }
 
 .sprite_box .sprite_holder .img_form  {
-   height: var(--puppetshow_height);
    width: auto;
    max-width: none;
 }
+
+.sprite_box .sprite_holder .img_form	{ height: calc(var(--puppetshow_height)* 0.85); }
+.sprite_box .trait_tall .img_form		{ height: calc(var(--puppetshow_height)* 1.0); }
+.sprite_box .trait_huge .img_form		{ height: calc(var(--puppetshow_height)* 1.2); }
+.sprite_box .trait_short .img_form		{ height: calc(var(--puppetshow_height)* 0.7); }
+.sprite_box .trait_tiny .img_form		{ height: calc(var(--puppetshow_height)* 0.5); }
+
 .sprite_box .sprite_holder .label {
     position: absolute;
     left: 30%;
@@ -229,18 +236,20 @@
 */
 
 :root {
-  --filter-whited: saturate(0%) contrast(150%) brightness(500%);
-  --filter-ghost: saturate(0%) contrast(150%) brightness(500%) opacity(30%);
-
+  --filter_whited: saturate(0%) contrast(150%) brightness(500%);
+  --filter_redded: sepia(100%) saturate(400%) hue-rotate(-50deg);
+  --filter_ghost: saturate(0%) contrast(150%) brightness(500%) opacity(30%);
+  --filter_next: drop-shadow(0px 0px 4px red);
 }
 
 .sprite_holder					{ filter: brightness(100%); }
 .sprite_holder.active			{ z-index: 3; filter: brightness(110%); }
-.sprite_holder.next				{ z-index: 4; filter: brightness(130%) drop-shadow(0px 0px 4px red); }
-.sprite_holder.lowhealth		{ animation: fade_red 2.0s linear 0s infinite; }
-.sprite_holder.verylowhealth	{ animation: fade_red 1.0s linear 0s infinite; }
+.sprite_holder.next	.see_active	{ filter: var(--filter_next); }
+.sprite_holder.next				{ z-index: 4; filter: brightness(130%); }
+.sprite_holder.lowhealth .see_health		{ animation: fade_red 2.0s linear 0s infinite; }
+.sprite_holder.verylowhealth .see_health	{ animation: fade_red 1.0s linear 0s infinite; }
 .sprite_holder.target			{ z-index: 8; filter: none; }
-.sprite_holder.dead				{ z-index:-9; filter: var(--filter-ghost) }
+.sprite_holder.dead				{ z-index:-9; filter: var(--filter_ghost) }
 .sprite_holder.target.dead		{ z-index: 9; filter: none; }
 
 
@@ -264,25 +273,28 @@
 .sprite_holder.critical img		{ animation: critical 3.0s ease 0s 1; }
 .sprite_holder.miss img			{ animation: miss 3.0s ease 0s 1; }
 .sprite_holder.nodamage img		{ animation: nodamage 3.0s ease 0s 1; }
-.sprite_holder.target.dead img	{ filter: var(--filter-ghost) }
+.sprite_holder.target.dead img	{ filter: var(--filter_ghost) }
 .sprite_holder.target.dead img	{ animation: die 6.0s ease 0s 1; }
 
 
 @keyframes die {
   13%	{ transform: rotate(  0deg); top: 00px; filter: none; }
   16%	{ transform: translate(30px, 0px);	  }
-  18%	{ filter: var(--filter-whited) }
+  18%	{ filter: var(--filter_whited) }
   20%	{ filter: none;	  }
+  18%	{ filter: var(--filter_whited) }
+  20%	{ filter: none;	  }
+  18%	{ filter: var(--filter_whited) }
   
-  30%	{ transform: rotate(  2deg); }
-  34%	{ transform: rotate( -3deg); }
-  38%	{ transform: rotate(  4deg); }
-  42%	{ transform: rotate( -5deg); }
-  46%	{ transform: rotate(  6deg); }
-  50%	{ transform: rotate( -7deg); top: 10px; }
+  30%	{ transform: rotate(  1deg); }
+  34%	{ transform: rotate( -2deg); }
+  38%	{ transform: rotate(  3deg); }
+  42%	{ transform: rotate( -4deg); }
+  46%	{ transform: rotate(  5deg); }
+  50%	{ transform: rotate( -6deg); top: 10px; }
   80%	{ transform: rotate(180deg); top: var(--puppetshow_height); filter: none; }
-  81%	{ transform: rotate(  0deg); top: var(--puppetshow_height); filter: var(--filter-ghost); }
-  100%	{ transform: rotate(  0deg); top: 0px; filter: var(--filter-ghost); }
+  81%	{ transform: rotate(  0deg); top: var(--puppetshow_height); filter: var(--filter_ghost); }
+  100%	{ transform: rotate(  0deg); top: 0px; filter: var(--filter_ghost); }
 }
 /*
 
@@ -295,32 +307,32 @@
 */
 
 @keyframes attack {
-  0%, 100%	{ transform: translateX(0px)  }
-  10%		{ transform: translateX( 30px)  }
-  30%		{ transform: translateX(-1200%) }
+  0%, 80%	{ transform: translateX(0px)  }
+  15%		{ transform: translateX( 50px)  }
+  30%		{ transform: translateX(var(--puppet_range)) }
 }
 @keyframes hit {
   26%, 100%	{ transform: translate(0px, 0px);	filter: none }
   29%		{ transform: translate(30px, 0px);	  }
-  30%		{ filter: var(--filter-whited) }
+  30%		{ filter: var(--filter_whited) }
   32% 		{ filter: none }
-  34% 		{ filter: var(--filter-whited) }
+  34% 		{ filter: var(--filter_whited) }
   36% 		{ filter: none }
-  38% 		{ filter: var(--filter-whited) }
+  38% 		{ filter: var(--filter_whited) }
   44%		{ transform: translate(0px, 0px) }
   66%		{ filter: none }
 }
 @keyframes critical {
   26%, 100%	{ transform: translate(0px,0px); filter: none }
   29%		{ transform: translate(60px,0px); }
-  30%		{ transform: translate(50px,5px); filter: var(--filter-whited) }
+  30%		{ transform: translate(50px,5px); filter: var(--filter_whited) }
   32% 		{ transform: translate(40px,0px); filter: none }
-  34% 		{ transform: translate(30px,5px); filter: var(--filter-whited) }
+  34% 		{ transform: translate(30px,5px); filter: var(--filter_whited) }
   36% 		{ transform: translate(20px,0px); filter: none }
-  38% 		{ transform: translate(10px,5px); filter: var(--filter-whited) }
+  38% 		{ transform: translate(10px,5px); filter: var(--filter_whited) }
   44%		{ transform: translate(-5px,0px); filter: none }
   46%		{ transform: translate(4px,0px) }
-  48%		{ transform: translate(-2px,0px); filter: var(--filter-whited) }
+  48%		{ transform: translate(-2px,0px); filter: var(--filter_whited) }
   52%		{ transform: translate(1px,0px) }
   66%		{ filter: none }
 }
@@ -339,8 +351,8 @@
 
 
 @keyframes fade_red {
-  0%, 100% { filter: sepia(000%) saturate(000%) hue-rotate(-00deg); }
-  50%      { filter: sepia(100%) saturate(400%) hue-rotate(-50deg); }
+  0%, 100% { filter: none; }
+  50%      { filter: var(--filter_redded); }
 }
 .arrive:active {
   animation-name: arrive;

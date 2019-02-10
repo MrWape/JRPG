@@ -8,8 +8,11 @@
   --yellow: #ec2;
   
   --color_bar_bg: #5A0000;
+  
   --darken: rgba(0,0,0,0.7);
+  --darkish: rgba(0,0,0,0.4);
   --lighten: rgba(255,255,255,0.7);
+  --lightish: rgba(255,255,255,0.35);
   
   --img_url: "can't do this";
 }
@@ -281,6 +284,7 @@ img.dim {
 .tipholder:hover {
   color: #fff;
 }
+/*
 .tip {
   display: block;
   position: absolute;
@@ -289,7 +293,7 @@ img.dim {
   padding: 5px 10px;
   font-size: .7em;
   text-align: center; 
-  z-index: 9999;
+  z-index: 999999;
   max-width: 400px;
   min-width: 100px;
   overflow: hidden;
@@ -308,7 +312,36 @@ img.dim {
 .tipholder:active .tip {
   transform: scale(1.5) translate(2em,2em);
   opacity: 1;
+}*/
+
+.tip * {
+	padding: 0 !important; 
+	margin: 0 !important; 
 }
+
+.tip {
+  display: block;
+  position: absolute;
+  bottom: 3em;
+  left: 10%;
+  border: 1px solid silver;
+  background: rgba(0,0,0,.7);
+  padding: 5px 10px;
+  font-size: .7em;
+  max-width: 400px;
+  min-width: 150px;
+  text-align: center; 
+  z-index: 999999;
+  visibility: hidden;
+}
+.tipholder:hover .tip {
+  visibility: visible;
+}
+.tipholder:active .tip {
+  transform: scale(1.5) translate(-2em,2em);
+  transform-origin: 50% 100%;
+}
+
 
 
 .tipholder.table .tip {
@@ -330,6 +363,41 @@ img.dim {
 .tip .divider {
   border-top: 1px solid white;
 }
+
+
+
+
+
+
+/* BUTTONS */
+
+button {
+    cursor: pointer;
+    color: #eee;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+	border-radius: .3em;
+	text-shadow: 1px 1px 0 var(--lightish), -1px -1px 0 var(--darkish);
+	box-shadow: -1px -5px 7px var(--darkish) inset, 1px 5px 7px var(--darken);
+    _background-image: linear-gradient(white 0%, cyan 4%, var(--blue) 30%);
+    _background-image: linear-gradient(white 0%, cyan 2%, rgba(0,0,255,0.0) 30%);
+    background-image: linear-gradient(rgba(0,0,255,0.0) 0%, cyan 10%, cyan 15%, rgba(0,0,255,0.0) 30%);
+	transition: border .3s ease, box-shadow: .3s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: var(--blue);
+	box-shadow: -1px -5px 7px var(--darken) inset, 0px 0px 11px var(--blue);
+}
+
+
+
+
+
+
+
 
 
 
