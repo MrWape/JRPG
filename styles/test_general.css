@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css?family=Almendra');
+
 
 
 :root {
@@ -277,9 +279,11 @@ img.dim {
 .tipholder {
   display: inline-block;
   position: relative;
-  text-decoration: underline solid var(--lighten);
   cursor: help;
   user-select: none; 
+}
+.tipholder .label {
+  text-decoration: underline solid var(--lighten);
 }
 .tipholder:hover {
   color: #fff;

@@ -12,8 +12,21 @@
   
   --bg_ruins: url('C:/Users/sketc/Documents/GitHub/JRPG/images/bg/ruins.jpg');
   --bg_ruins: url('../images/bg/ruins.jpg');
+  
+  ---bg_granite: url('https://cdn.jsdelivr.net/gh/MrWape/JRPG@latest/images/tiles/marble.gif');
 
+  ---bg_marble: url('C:\Users\sketc\Documents\GitHub\JRPG\images\tiles\marble.gif');
 }
+
+
+.tile_primary {
+  background-image: var(--bg_marble) !important;
+}
+
+
+
+
+
 
 
 
@@ -85,28 +98,49 @@
 
 
 
-
 .team_box .unit_box {
   margin-bottom: .5em; 
   width: 95%; 
-  padding: .3em .5em;
+  padding: 0;
   position: relative;
   box-sizing: border-box; 
+  border-radius: 2px; 
 }
+
+.team_box .unit_box .inner {
+  width: 100%; 
+  padding: .3em .5em;
+  box-sizing: border-box; 
+}
+.team_box .unit_box .name .label {
+  font-family: 'Almendra', serif;
+  _text-transform: uppercase;
+  font-size: 170%;
+  color: #da4; text-shadow: -1px 0 0 #750, -2px 0 0 #fec, -3px 0 0 #750, 1px 1px 2px black;
+  color: #ddf; text-shadow: -1px 0 0 #ccc, -2px 0 0 #333, -3px 0 0 #ccc, 1px 1px 2px black;
+  text-decoration: none;
+}
+
 .team_box.A .unit_box {
   text-align: left; 
   float: left; 
-  background-color: rgba(55,155,255, 0.2); 
 }
-.team_0 {  background-color: rgba(55,155,255, 0.4); }
+
+
 
 .team_box.B .unit_box {
   text-align: right; 
   float: right;
-  background-color: rgba(255,0,0, 0.2);
 }
-.team_1 { background-color: rgba(255,0,0, 0.4); }
 
+
+.team_box.B .unit_box .inner {background-color: rgba(255,0,0, 0.1); }
+.team_box.A .unit_box .inner {background-color: rgba(55,155,255, 0.1); }
+
+/*
+.team_0 { background-color: rgba(55,155,255, 0.4); }
+.team_1 { background-color: rgba(255,0,0, 0.4); }
+*/
 
 .unit_box.next {
   _border: 1px solid gold; 
@@ -114,10 +148,10 @@
   _margin-right: 1em; 
   background-color: #35a !important;
 }
-.unit_box.active { border: 1px dotted gold; }
-.unit_box.last 	{ border: 1px dotted black; }
-.unit_box.dead 	{ background-color: rgba(111,111,111, 0.2) !important; opacity: 0.5 }
-.unit_box.target { border: 1px dotted red;  }
+.unit_box.active .inner		{  }
+.unit_box.last .inner		{  }
+.unit_box.dead .inner		{ background-color: rgba(0,10,30,0.3) !important; }
+.unit_box.target .innner	{ border: 1px dotted red;  }
 
 .unit_box.type_NPCs 		{ color: orange; }
 .unit_box.type_Creatures	{ color: silver; }
