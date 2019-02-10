@@ -236,7 +236,7 @@
 
 .sprite_holder					{ filter: brightness(100%); }
 .sprite_holder.active			{ z-index: 3; filter: brightness(110%); }
-.sprite_holder.next				{ z-index: 2; filter: brightness(130%) drop-shadow(0px 0px 4px red); }
+.sprite_holder.next				{ z-index: 4; filter: brightness(130%) drop-shadow(0px 0px 4px red); }
 .sprite_holder.lowhealth		{ animation: fade_red 2.0s linear 0s infinite; }
 .sprite_holder.verylowhealth	{ animation: fade_red 1.0s linear 0s infinite; }
 .sprite_holder.target			{ z-index: 8; filter: none; }
