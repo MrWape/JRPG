@@ -9,7 +9,8 @@
   
   --readout_height: 450px;
   
-  --bg_ruins: url('C:/Users/sketc/Documents/GitHub/JRPG/images/bg/ruins.jpg')
+  --bg_ruins: url('C:/Users/sketc/Documents/GitHub/JRPG/images/bg/ruins.jpg');
+  --bg_ruins: url('../images/bg/ruins.jpg');
 
 }
 
@@ -268,20 +269,20 @@
 
 
 @keyframes die {
-  13%	{ transform: rotate(0deg); top: 00px; filter: none; }
+  13%	{ transform: rotate(  0deg); top: 00px; filter: none; }
   16%	{ transform: translate(30px, 0px);	  }
   18%	{ filter: var(--filter-whited) }
   20%	{ filter: none;	  }
   
-  30%	{ transform: rotate( 2deg); }
-  34%	{ transform: rotate(-3deg); }
-  38%	{ transform: rotate( 4deg); }
-  42%	{ transform: rotate(-5deg); }
-  46%	{ transform: rotate( 6deg); }
-  50%	{ transform: rotate(-7deg); top: 10px; }
-  80%	{ transform: rotate(180deg); top: 60px; filter: none; }
-  81%	{ transform: rotate(0deg); top: var(--puppetshow_height); filter: var(--filter-ghost) }
-  100%	{ transform: rotate(0deg); top: 0px; filter: var(--filter-ghost) }
+  30%	{ transform: rotate(  2deg); }
+  34%	{ transform: rotate( -3deg); }
+  38%	{ transform: rotate(  4deg); }
+  42%	{ transform: rotate( -5deg); }
+  46%	{ transform: rotate(  6deg); }
+  50%	{ transform: rotate( -7deg); top: 10px; }
+  80%	{ transform: rotate(180deg); top: var(--puppetshow_height); filter: none; }
+  81%	{ transform: rotate(  0deg); top: var(--puppetshow_height); filter: var(--filter-ghost); }
+  100%	{ transform: rotate(  0deg); top: 0px; filter: var(--filter-ghost); }
 }
 /*
 
