@@ -16,10 +16,15 @@
 
 
 body {
-	background-image: url('C:/Users/sketc/Documents/GitHub/JRPG/images/tiles/granite.jpg');
+	background-image: url('https://cdn.jsdelivr.net/gh/MrWape/JRPG/images/tiles/granite.jpg');
 }
 
-
+.half_col {
+	width: 50%; float: left; 
+}
+.third_col {
+	width: 33%; float: left; 
+}
 
 
 
@@ -269,7 +274,7 @@ img.dim {
 .tipholder {
   display: inline-block;
   position: relative;
-  text-decoration: underline var(--lighten);
+  text-decoration: underline solid var(--lighten);
   cursor: help;
   user-select: none; 
 }
@@ -292,6 +297,10 @@ img.dim {
   opacity: 0.0;
   transition: transform .2s ease, opacity .2s ease;
 }
+.tip * {
+	padding: 0 !important; 
+	margin: 0 !important; 
+}
 .tipholder:hover .tip {
   transform: scale(1.0) translate(2em,1em);
   opacity: 1;
@@ -301,6 +310,26 @@ img.dim {
   opacity: 1;
 }
 
+
+.tipholder.table .tip {
+  text-align: left; 
+  _width: 150px;
+}
+.tip table {
+  width: 100%;
+}
+.tip table td {
+  text-align: left; 
+}
+.tip table td:nth-child(2) {
+  text-align: center; 
+}
+.tip table td:last-child {
+  text-align: right; 
+}
+.tip .divider {
+  border-top: 1px solid white;
+}
 
 
 
