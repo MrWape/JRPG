@@ -3,26 +3,42 @@
   --darken: rgba(0,0,0,0.7);
   --lighten: rgba(255,255,255,0.7);
   
+  --color_font: #eee;
+  --color_font_lightest: #fff;
+  
   --puppetshow_height: 200px;
   --puppet_width: 150px;
-  --puppet_xoff: 90px;
+  --puppet_xoff: 77px;
   --puppet_range: -600px;
+  
+  --battlescreen_width: 54em;
+  
+  --borderradius_big: 15px;
+  --borderradius_small: 7px;
   
   --readout_height: 250px;
   
-  --bg_ruins: url('C:/Users/sketc/Documents/GitHub/JRPG/images/bg/ruins.jpg');
-  --bg_ruins: url('../images/bg/ruins.jpg');
+  --box_shadow: 1px 5px 7px var(--darken);
   
-  ---bg_granite: url('https://cdn.jsdelivr.net/gh/MrWape/JRPG@latest/images/tiles/marble.gif');
-
-  ---bg_marble: url('C:\Users\sketc\Documents\GitHub\JRPG\images\tiles\marble.gif');
+  --bg_ruins: url('../images/bg/ruins.jpg');
+  --bg_granite: url('https://cdn.jsdelivr.net/gh/MrWape/JRPG@latest/images/tiles/granite.jpg');
+  --bg_marble: url('https://cdn.jsdelivr.net/gh/MrWape/JRPG@latest/images/tiles/marble.png');
+  
+  --bg_marble: url('../images/tiles/marble.png');
+  
+  --anim_unitbox_delay: 1s;
+  
+  
+  ---MOVEALLOFTHESETOGENERAL: 'horse'
+  
 }
 
 
 .tile_primary {
   background-image: var(--bg_marble) !important;
+  background-position: 50% 50%;
+  background-size: cover;
 }
-
 
 
 
@@ -38,14 +54,47 @@
 
 
 .combat #story {
-	margin:0;
+	margin:0 !important;
+}
+/*
+#ui-bar.stowed~#story {
+    margin-left: 4.5em;
+}
+*/
+.combat #passages {
+	width: var(--battlescreen_width);
+	max-width: var(--battlescreen_width);
+	
 }
 
 
 
 
 
-/* FIGHT SCREEN */
+
+
+/* CONTROLS */
+
+.combat_control {
+  position: fixed;
+  bottom: 0em;
+  left: calc((100vw - var(--battlescreen_width)) / 2);
+  z-index: 1000;
+  background: rgba(0,0,0,.5);
+  padding: 1em;
+  width: var(--battlescreen_width);
+  box-sizing: border-box;
+  text-align: center;
+  background-image: var(--bg_marble) !important;
+  border-radius: var(--borderradius_big); border-bottom-left-radius: 0; border-bottom-right-radius: 0;
+  box-shadow: var(--box_shadow);
+}
+
+
+
+
+
+/* FIGHT DATA */
 
 .readout  { width: 60%; }
 .team_box { width: 20%; }
@@ -60,11 +109,14 @@
 
 
 .readout {
- overflow-x: hidden; 
- overflow-y: scroll; 
+  overflow-x: hidden; 
+  overflow-y: scroll; 
+    border-radius: var(--borderradius_big);
+    background: var(--darkish);
+	box-shadow: var(--box_shadow) inset;
 }
 .readout ol {
-  padding: 0;
+  padding: .5em 0 .5em 1em;
   margin:  0;
   list-style: none;
   counter-reset: small-number-counter;
@@ -72,8 +124,7 @@
 }
 .readout ol li {
   counter-increment: small-number-counter;
-  margin: 0 0 .2em 1em;
-  _padding: .2em .6em;
+  margin: 0 0 .2em 0;
   padding: 0;
 }
 /*
@@ -104,20 +155,22 @@
   padding: 0;
   position: relative;
   box-sizing: border-box; 
-  border-radius: 2px; 
+  border-radius: var(--borderradius_small); 
+  box-shadow:var(--box_shadow);
 }
 
 .team_box .unit_box .inner {
   width: 100%; 
-  padding: .3em .5em;
+  padding: .05em .5em .3em .5em;
   box-sizing: border-box; 
+  border-radius: var(--borderradius_small); 
 }
 .team_box .unit_box .name .label {
-  font-family: 'Almendra', serif;
-  _text-transform: uppercase;
-  font-size: 170%;
+
+  /*
   color: #da4; text-shadow: -1px 0 0 #750, -2px 0 0 #fec, -3px 0 0 #750, 1px 1px 2px black;
   color: #ddf; text-shadow: -1px 0 0 #ccc, -2px 0 0 #333, -3px 0 0 #ccc, 1px 1px 2px black;
+  */
   text-decoration: none;
 }
 
@@ -125,17 +178,14 @@
   text-align: left; 
   float: left; 
 }
-
-
-
 .team_box.B .unit_box {
-  text-align: right; 
+  text-align: left; 
   float: right;
 }
 
 
-.team_box.B .unit_box .inner {background-color: rgba(255,0,0, 0.1); }
-.team_box.A .unit_box .inner {background-color: rgba(55,155,255, 0.1); }
+.team_box.B .unit_box .inner {background-color: rgba(255,5,5, 0.2); }
+.team_box.A .unit_box .inner {background-color: rgba(0,55,255, 0.2); }
 
 /*
 .team_0 { background-color: rgba(55,155,255, 0.4); }
@@ -147,14 +197,20 @@
   _margin-left: 1em;
   _margin-right: 1em; 
   background-color: #35a !important;
+  box-shadow: var(--shadow_next) inset, var(--shadow_next) inset;
 }
 .unit_box.active .inner		{  }
 .unit_box.last .inner		{  }
-.unit_box.dead .inner		{ background-color: rgba(0,10,30,0.3) !important; }
+.unit_box.dead .inner		{ background-color: rgba(0,5,10,0.6) !important; }
 .unit_box.target .innner	{ border: 1px dotted red;  }
 
 .unit_box.type_NPCs 		{ color: orange; }
 .unit_box.type_Creatures	{ color: silver; }
+
+
+
+
+
 
 
 
@@ -171,30 +227,32 @@
 .img_form {
 }
 
-.sprite_box.full_width {
-	width: 100vw;
-	height: 100vh;
-    position: fixed;
-    left: 0px;
-    top: -2em;
-	z-index: -300; 
-}
-
-
+/* .sprite_box.full_width {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  top: -2em;
+  z-index: -300; 
+} */
 
 .sprite_box {
   z-index: 333;
   _pointer-events: none;
   width: 100%;
+  box-sizing: border-box;
   height: var(--puppetshow_height);
-  margin: 20px auto;
+  margin: 0 auto 15px auto;
   border-top: 2px solid silver;
-  border-bottom: 2px solid silver;
+  _border-bottom: 2px solid silver;
   position: relative;
   background-image: var(--bg_ruins);
   background-size: cover;
   background-position: 50% 50%;
+  
   overflow: hidden;
+  border-radius:var(--borderradius_big); border-top-left-radius:0; border-top-right-radius:0;
+  box-shadow: var(--box_shadow)
 }
 .sprite_box:active {
   overflow: visible;
@@ -216,9 +274,9 @@
   right: 0;
 }
 .sprite_box .sprite_holder {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 	width: var(--puppet_width);
 	height: auto; 
 	overflow: visible;
@@ -245,8 +303,8 @@
 .sprite_box .trait_tiny .img_form		{ height: calc(var(--puppetshow_height)* 0.5); }
 
 .sprite_box .sprite_holder .label {
-    position: absolute;
-    left: 30%;
+  position: absolute;
+  left: 30%;
 	border: 1px dotted silver;
 	background: black;
 	font-size: 12px;
@@ -273,7 +331,8 @@
   --filter_whited: saturate(0%) contrast(150%) brightness(500%);
   --filter_redded: sepia(100%) saturate(400%) hue-rotate(-50deg);
   --filter_ghost: saturate(0%) contrast(150%) brightness(500%) opacity(30%);
-  --filter_next: drop-shadow(0px 0px 4px red);
+  --filter_next: drop-shadow(0px 0px 4px var(--red));
+  --shadow_next: 0px 0px 2px #fff;
 }
 
 .sprite_holder					{ filter: brightness(100%); }
@@ -386,7 +445,7 @@
 
 @keyframes fade_red {
   0%, 100% { filter: none; }
-  50%      { filter: var(--filter_redded); }
+  50%    { filter: var(--filter_redded); }
 }
 .arrive:active {
   animation-name: arrive;
@@ -409,17 +468,17 @@
 
 @keyframes pulse {
   0%, 100% { transform: scale(1.0); }
-  30%      { transform: scale(1.1); }
+  30%    { transform: scale(1.1); }
 }
 
-.unit_box.nodamage { animation: shake 0.3s linear 0.5s 1; }
-.unit_box.miss     { animation: shake 0.6s linear 0.5s 1; }
-.unit_box.hit      { animation: shake 0.1s linear 0.5s 4; }
-.unit_box.hit.dead { animation: shake 0.1s linear 0.5s 19; }
+.unit_box.nodamage { animation: shake 0.3s linear var(--anim_unitbox_delay) 1; }
+.unit_box.miss   { animation: shake 0.6s linear var(--anim_unitbox_delay) 1; }
+.unit_box.hit    { animation: shake 0.1s linear var(--anim_unitbox_delay) 4; }
+.unit_box.hit.dead { animation: shake 0.1s linear var(--anim_unitbox_delay) 19; }
 
 @keyframes shake {
   0%, 100% { transform: translate(-1px, 3px); }
-  50%      { transform: translate( 1px,-3px); }
+  50%    { transform: translate( 1px,-3px); }
 }
 
 

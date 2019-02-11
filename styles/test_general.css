@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Almendra');
-
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 :root {
   --blue: #29d;
@@ -9,19 +9,55 @@
   --green: #191;
   --yellow: #ec2;
   
+  --font: 'Roboto', sans-serif;;
+  --font-fancy: 'Almendra', serif;
+  
   --color_bar_bg: #5A0000;
+  --color_font: #eee;
+  --color_font_lightest: #fff;
   
   --darken: rgba(0,0,0,0.7);
   --darkish: rgba(0,0,0,0.4);
   --lighten: rgba(255,255,255,0.7);
   --lightish: rgba(255,255,255,0.35);
-  
-  --img_url: "can't do this";
+
+  --bg_granite: url('https://cdn.jsdelivr.net/gh/MrWape/JRPG@latest/images/tiles/granite.jpg');
+  --bg_marble: url('https://cdn.jsdelivr.net/gh/MrWape/JRPG@latest/images/tiles/marble.png');
 }
 
 
+
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 0.8em;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 1px 1px 5px var(--darkish); 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  transition: 0.2s all;
+  box-shadow: inset 1px 1px 1px rgba(255, 55, 55, 1), inset -1px -1px 5px #000;
+  background: var(--red); 
+  border: 1px solid var(--red);
+}
+::-webkit-scrollbar-thumb:hover {
+  _box-shadow: inset 1px 1px 1px #fff, inset -1px -1px 5px #000;
+  _border: 1px solid crimson;
+}
+
+
+
+
+
+
+
 body {
-	background-image: url('https://cdn.jsdelivr.net/gh/MrWape/JRPG/images/tiles/granite.jpg');
+	background-image: var(--bg_granite);
+	font-family: var(--font);
 }
 
 .half_col {
@@ -30,6 +66,34 @@ body {
 .third_col {
 	width: 33%; float: left; 
 }
+
+.col {
+	float: left; 
+	box-sizing: border-box; padding-right: 1em;
+}
+.col.last {
+}
+
+
+
+h1,h2,h3,h4,h5,h6,h7 {
+  font-family: 'Almendra', serif;
+  font-family: var(--font-fancy);
+  text-shadow: -1px 0 0 white, 1px 1px 3px black, 1px 1px 2px black;
+  margin: 5px 0;
+  font-weight: normal; 
+  text-decoration: none;
+}
+
+h1 { font-size: 48px; }
+h2 { font-size: 32px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
+
+
+
 
 
 
@@ -98,13 +162,13 @@ body {
 
 img		{ max-width: 100%; }
 
-small	{ font-size: 80%; }
-smaller	{ font-size: 60%; }
-smallest{ font-size: 40%; }
+small,.small		{ font-size: 80%; }
+smaller,.smaller	{ font-size: 60%; }
+smallest,.smallest	{ font-size: 40%; }
 
-big 	{ font-size: 120%; }
-bigger 	{ font-size: 140%; }
-biggest	{ font-size: 160%; }
+big, .big			{ font-size: 120%; }
+bigger, .bigger 	{ font-size: 140%; }
+biggest, .biggest	{ font-size: 160%; }
 
 .no-transition.passage-in { opacity: 1; }
 /*naff .passage.notransition { transition: none; -webkit-transition: none; -moz-transition: none; } */ 
@@ -327,16 +391,18 @@ img.dim {
   display: block;
   position: absolute;
   bottom: 3em;
-  left: 10%;
+  right: 2em;
   border: 1px solid silver;
   background: rgba(0,0,0,.7);
   padding: 5px 10px;
   font-size: .7em;
   max-width: 400px;
   min-width: 150px;
-  text-align: center; 
+  text-align: left; 
   z-index: 999999;
   visibility: hidden;
+	font-family: var(--font);
+	font-size: 12px;
 }
 .tipholder:hover .tip {
   visibility: visible;
@@ -377,7 +443,7 @@ img.dim {
 
 button {
     cursor: pointer;
-    color: #eee;
+    color: var(--color_font);
     background-color: var(--blue);
     border: 1px solid var(--blue);
 	border-radius: .3em;
