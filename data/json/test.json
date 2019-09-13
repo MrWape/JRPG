@@ -1,0 +1,556 @@
+[  
+   {  
+      "id":		"succubus",
+
+      "battle_start":	"Hey handsome!|My you look tasty...|How would you like to die in a beautiful woman's arms?",
+      "battle_win":		"You lost to a girl?|What a pussy!",
+      "battle_strike":	"Take this!|Hyaaaa!|Here it comes!",
+      "battle_kill":	"",
+      "battle_die":		"The things I could have done to you...|Nooo...|You could have had... me...|Going down... one final time...",
+      "battle_yield":	"Alright, hold up. You got the right stuff...|Do with me what you will but... don't be gentle...|Spare me, you won't regret it.",
+      "battle_hurt":	"Oww! That's not nice!|Oooh, that felt gooood.|Grrrr.",
+      "battle_flee":	"",
+      "rape_start":		"Please! Don't hold back!|I'm looking forward to this!|Impale me already!",
+      "rape_climax":		"Ohhhh!|Sinful bliss!|Such a skillful rape!|Master!",
+      "rape_insem":		"Fill me, master!|Is it over? Already?|Mmmm, I can feel your cum inside me...",
+      "sex_start":		"I'll make you forget your first love.|Your dreams will soon come true.|Many men have enjoyed the bliss you will soon receive.",
+      "sex_climax":		"",
+      "sex_insem":		"Is it over? Already?|Mmmm, cum. I can taste it, even down there...",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":	"default",
+
+      "battle_start":	"Prepare to die!|You never should have come here!|I'm gonna kick your ass!",
+      "battle_win":		"Oh yeahhhh!",
+      "battle_kill":	"Another one bites the dust!",
+      "battle_yield":	"No more! I give up!Alright, alright! I give in.",
+      "battle_die":		"Down I go...",
+      "battle_hurt":	"Oof!",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":	"silent",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"BLANK",
+
+      "battle_start":	"",
+      "battle_win":		"",
+      "battle_strike":	"",
+      "battle_kill":	"",
+      "battle_die":		"",
+      "battle_yield":	"",
+      "battle_hurt":	"",
+      "battle_hurt2":	"",
+      "battle_flee":	"",
+      "rape_start":		"",
+      "rape_climax":	"",
+      "rape_insem":		"",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"elf",
+
+      "battle_start":	"You will encroach no further, outsider!|How dare you defile our sacred woods!",
+      "battle_win":		"One less of your kind in the world!",
+      "battle_kill":	"",
+      "battle_strike":	"I never miss!",
+      "battle_die":		"Aaaaah!|In the end... I could not...",
+      "battle_yield":	"I cannot continue... I surrender, mortal. Do with me what you will.",
+      "battle_hurt":	"Argh!|You will regret that, outsider.",
+      "battle_hurt2":	"I cannot fall... I must not...|Spirits of the woods, grant me strength...",
+      "battle_flee":	"We will purge you from our lands!",
+      "rape_start":		"No... no! Not by a mortal! Anything but that!",
+      "rape_climax":		"My body betrays me!",
+      "rape_insem":		"No! His vile seed!",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+
+   },
+   {  
+      "id":		"knight",
+
+      "battle_start":	"Thou shalt never defeat a knight!",
+      "battle_win":		"Thou art vanquished! Now die!",
+      "battle_strike":	"Glory will be mine today!",
+      "battle_kill":	"",
+      "battle_die":		"No opponent... can... defeat... m-",
+      "battle_yield":	"I yield! Thou hast bested me. Please show mercy...",
+      "battle_hurt":	"Oof!|Just a flesh wound.",
+      "battle_hurt2":	"Ngh!|Armor, don't fail me!",
+      "battle_flee":	"There is no glory in defeat...",
+      "rape_start":		"No! My vow of chastity...",
+      "rape_climax":		"I never knew... the pleasures...",
+      "rape_insem":		"No! Not inside!!!",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+
+   },
+   {  
+      "id":		"ninja",
+
+      "battle_start":	"I will end you, foul beast!|From the shadows I strike!",
+      "battle_win":		"",
+      "battle_strike":	"Taste my blade!|Whirling blade strike!",
+      "battle_kill":	"",
+      "battle_die":		"My clan will... avenge me...",
+      "battle_yield":	"My training has failed me; I cannot fight any longer. Do what you will, warrior.",
+      "battle_hurt":	"A ninja feels no pain!|Rrrr!",
+      "battle_hurt2":	"My weak spot!|",
+      "battle_flee":	"To flee and fight another day, that is my way of the ninja.",
+      "rape_start":		"Not again!",
+      "rape_climax":	"",
+      "rape_insem":		"Noo! I fear this will end my carrer as a ninja...",
+      "sex_start":		"",
+      "sex_climax":		"You are quite skilled!",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+
+   },
+   {  
+      "id":		"peasant",
+
+      "battle_start":	"Please, spare me sir!",
+      "battle_win":		"I'm as surprised as you are...",
+      "battle_strike":	"",
+      "battle_kill":	"",
+      "battle_die":		"",
+      "battle_yield":	"I submit myself to your mercy, m'lord.",
+      "battle_hurt":	"Ouch!|Ngh!",
+      "battle_hurt2":	"Ugh!|Save me...",
+      "battle_flee":	"",
+      "rape_start":		"No! Not like this!",
+      "rape_climax":	"",
+      "rape_insem":		"",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"tough",
+
+      "battle_start":	"",
+      "battle_win":		"",
+      "battle_strike":	"",
+      "battle_kill":	"",
+      "battle_die":		"",
+      "battle_yield":	"",
+      "battle_hurt":	"",
+      "battle_hurt2":	"",
+      "battle_flee":	"",
+      "rape_start":		"",
+      "rape_climax":	"",
+      "rape_insem":		"",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"thief",
+
+      "battle_start":	"Your money or your life!",
+      "battle_win":		"Now to slit his throat and count his coin!",
+      "battle_strike":	"I'm coming for you!|Kyaaaa!",
+      "battle_kill":	"",
+      "battle_die":		"In the end, it was my life that was stolen...",
+      "battle_yield":	"I give in! No amount of coin is worth this!",
+      "battle_hurt":	"Bastard!|Lucky shot!|Oof! He's quicker than I thought...",
+      "battle_hurt2":	"Things are looking dire!|I don't think I can win...",
+      "battle_flee":	"Screw this, I'm out.|You'll have to catch me first!|Time to cut my losses!",
+      "rape_start":		"N-n-no! My precious virginity!",
+      "rape_climax":		"Ah! I can't describe this bliss!",
+      "rape_insem":		"Dammit! You bastard!",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"genie",
+
+      "battle_start":	"You will wish you were never born!",
+      "battle_win":		"",
+      "battle_strike":	"",
+      "battle_kill":	"",
+      "battle_die":		"To the realm past hope and fear, I return.",
+      "battle_yield":	"I submit to you, new master! Your wish is my command!",
+      "battle_hurt":	"Kaa!|Fool!|Pain is an illusion.",
+      "battle_hurt2":	"Argggg!|Grrr. I've faced greater threats than you!|Damn you mortal!",
+      "battle_flee":	"To my master, I return.",
+      "rape_start":		"Ugh! A tighter fit than me in my lamp!",
+      "rape_climax":		"Exquisite pleasure!",
+      "rape_insem":		"Are you finished already? Tsk tsk...",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"witch",
+
+      "battle_start":	"",
+      "battle_win":		"",
+      "battle_strike":	"",
+      "battle_kill":	"",
+      "battle_die":		"",
+      "battle_yield":	"",
+      "battle_hurt":	"",
+      "battle_hurt2":	"",
+      "battle_flee":	"",
+      "rape_start":		"",
+      "rape_climax":	"",
+      "rape_insem":		"",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"angel",
+
+      "battle_start":	"I'll teach you to trifle with an angel.|Behold my glory, human!|Kneel or get out of my sight.",
+      "battle_win":		"",
+      "battle_strike":	"Kyaaa!|",
+      "battle_kill":	"",
+      "battle_die":		"",
+      "battle_yield":	"",
+      "battle_hurt":	"Ka!",
+      "battle_hurt2":	"I'm... I'm bleeding...|",
+      "battle_flee":	"",
+      "rape_start":		"No! You are unworthy!|Get off of me you brute!",
+      "rape_climax":	"Ohhhhh! What is this sensation?!|I did not think you would be capable!|The shame!",
+      "rape_insem":		"My womb! You've defiled my womb!|Abomination!|Goddess, spare me this fate!",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"inexperienced",
+
+      "battle_start":	"Ok, I'm warning you!",
+      "battle_win":		"Wow! I actually did it!|I knew I could do it!",
+      "battle_strike":	"This!",
+      "battle_kill":	"Oh my gosh, blood!|Down you go!",
+      "battle_die":		"Nooo...",
+      "battle_yield":	"Ok, ok, I give in.|I yield.",
+      "battle_hurt":	"Ow!",
+      "battle_hurt2":	"OUCH!",
+      "battle_flee":	"I've bit off more than I can chew.",
+      "rape_start":		"What are you doing?!|Is he about to... no! Please!",
+      "rape_climax":	"",
+      "rape_insem":		"",
+      "sex_start":		"Oh my gosh, is that what one looks like?|I'm not sure I'm ready for this.",
+      "sex_climax":		"Oh! Oh my goodness!|Oh my god, I love you!|",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"BLANK",
+
+      "battle_start":	"",
+      "battle_win":		"",
+      "battle_strike":	"",
+      "battle_kill":	"",
+      "battle_die":		"",
+      "battle_yield":	"",
+      "battle_hurt":	"",
+      "battle_hurt2":	"",
+      "battle_flee":	"",
+      "rape_start":		"",
+      "rape_climax":	"",
+      "rape_insem":		"",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"bookworm",
+
+      "battle_start":	"",
+      "battle_win":		"",
+      "battle_strike":	"",
+      "battle_kill":	"",
+      "battle_die":		"",
+      "battle_yield":	"",
+      "battle_hurt":	"",
+      "battle_hurt2":	"",
+      "battle_flee":	"",
+      "rape_start":		"",
+      "rape_climax":	"",
+      "rape_insem":		"",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"mage",
+
+      "battle_start":	"",
+      "battle_win":		"",
+      "battle_strike":	"",
+      "battle_kill":	"",
+      "battle_die":		"",
+      "battle_yield":	"",
+      "battle_hurt":	"",
+      "battle_hurt2":	"",
+      "battle_flee":	"",
+      "rape_start":		"",
+      "rape_climax":	"",
+      "rape_insem":		"",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"slave",
+
+      "battle_start":	"",
+      "battle_win":		"",
+      "battle_strike":	"",
+      "battle_kill":	"",
+      "battle_die":		"",
+      "battle_yield":	"",
+      "battle_hurt":	"",
+      "battle_hurt2":	"",
+      "battle_flee":	"",
+      "rape_start":		"",
+      "rape_climax":	"",
+      "rape_insem":		"",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"royal",
+
+      "battle_start":	"",
+      "battle_win":		"",
+      "battle_strike":	"",
+      "battle_kill":	"",
+      "battle_die":		"",
+      "battle_yield":	"",
+      "battle_hurt":	"",
+      "battle_hurt2":	"",
+      "battle_flee":	"",
+      "rape_start":		"",
+      "rape_climax":	"",
+      "rape_insem":		"",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"wife",
+
+      "battle_start":	"",
+      "battle_win":		"",
+      "battle_strike":	"",
+      "battle_kill":	"",
+      "battle_die":		"",
+      "battle_yield":	"",
+      "battle_hurt":	"",
+      "battle_hurt2":	"",
+      "battle_flee":	"",
+      "rape_start":		"",
+      "rape_climax":	"",
+      "rape_insem":		"",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"snakegirl",
+
+      "battle_start":	"Grrrr.|Hissss.",
+      "battle_win":		"",
+      "battle_strike":	"",
+      "battle_kill":	"",
+      "battle_die":		"",
+      "battle_yield":	"",
+      "battle_hurt":	"",
+      "battle_hurt2":	"",
+      "battle_flee":	"",
+      "rape_start":		"",
+      "rape_climax":	"",
+      "rape_insem":		"",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+
+   },
+   {  
+      "id":		"beastgirl",
+
+      "battle_start":	"",
+      "battle_win":		"",
+      "battle_strike":	"",
+      "battle_kill":	"",
+      "battle_die":		"",
+      "battle_yield":	"",
+      "battle_hurt":	"",
+      "battle_hurt2":	"",
+      "battle_flee":	"",
+      "rape_start":		"",
+      "rape_climax":	"",
+      "rape_insem":		"",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"mermaid",
+
+      "battle_start":	"",
+      "battle_win":		"",
+      "battle_strike":	"",
+      "battle_kill":	"",
+      "battle_die":		"",
+      "battle_yield":	"",
+      "battle_hurt":	"",
+      "battle_hurt2":	"",
+      "battle_flee":	"",
+      "rape_start":		"",
+      "rape_climax":	"",
+      "rape_insem":		"",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"BLANK",
+
+      "battle_start":	"",
+      "battle_win":		"",
+      "battle_strike":	"",
+      "battle_kill":	"",
+      "battle_die":		"",
+      "battle_yield":	"",
+      "battle_hurt":	"",
+      "battle_hurt2":	"",
+      "battle_flee":	"",
+      "rape_start":		"",
+      "rape_climax":	"",
+      "rape_insem":		"",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"BLANK",
+
+      "battle_start":	"",
+      "battle_win":		"",
+      "battle_strike":	"",
+      "battle_kill":	"",
+      "battle_die":		"",
+      "battle_yield":	"",
+      "battle_hurt":	"",
+      "battle_hurt2":	"",
+      "battle_flee":	"",
+      "rape_start":		"",
+      "rape_climax":	"",
+      "rape_insem":		"",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"BLANK",
+
+      "battle_start":	"",
+      "battle_win":		"",
+      "battle_strike":	"",
+      "battle_kill":	"",
+      "battle_die":		"",
+      "battle_yield":	"",
+      "battle_hurt":	"",
+      "battle_hurt2":	"",
+      "battle_flee":	"",
+      "rape_start":		"",
+      "rape_climax":	"",
+      "rape_insem":		"",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+      "id":		"BLANK",
+
+      "battle_start":	"",
+      "battle_win":		"",
+      "battle_strike":	"",
+      "battle_kill":	"",
+      "battle_die":		"",
+      "battle_yield":	"",
+      "battle_hurt":	"",
+      "battle_hurt2":	"",
+      "battle_flee":	"",
+      "rape_start":		"",
+      "rape_climax":	"",
+      "rape_insem":		"",
+      "sex_start":		"",
+      "sex_climax":		"",
+      "sex_insem":		"",
+
+      "narrator_voice":	false
+   },
+   {  
+
+   },
+   {  
+
+   },
+   {  
+
+   }
+]

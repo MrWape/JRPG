@@ -1,0 +1,420 @@
+
+
+
+.tile_primary {
+  background-image: var(--bg_marble) !important;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+.macro_image {
+	_min-width: 32px;
+	_min-height: 32px;
+}
+
+
+
+.combat #story {
+	margin:0 !important;
+}
+/*
+#ui-bar.stowed~#story {
+    margin-left: 4.5em;
+}
+*/
+.combat #passages {
+	width: var(--battlescreen_width);
+	max-width: var(--battlescreen_width);
+	
+}
+
+
+
+
+
+
+
+/* CONTROLS */
+
+.combat_control {
+  position: fixed;
+  bottom: 0em;
+  left: calc((100vw - var(--battlescreen_width)) / 2);
+  z-index: 1000;
+  background: rgba(0,0,0,.5);
+  padding: 1em;
+  width: var(--battlescreen_width);
+  box-sizing: border-box;
+  text-align: center;
+  background-image: var(--bg_marble) !important;
+  border-radius: var(--borderradius_big); border-bottom-left-radius: 0; border-bottom-right-radius: 0;
+  box-shadow: var(--box_shadow);
+}
+
+
+
+
+
+/* FIGHT DATA */
+
+.readout  { width: 60%; }
+.team_box { width: 20%; }
+
+
+.readout,
+.team_box {
+ float: left; 
+ box-sizing: border-box; 
+ height: var(--readout_height); 
+}
+
+
+.readout {
+  overflow-x: hidden; 
+  overflow-y: scroll; 
+    border-radius: var(--borderradius_big);
+    background: var(--darkish);
+	box-shadow: var(--box_shadow) inset;
+}
+.readout ol {
+  padding: .5em 0 .5em 1em;
+  margin:  0;
+  list-style: none;
+  counter-reset: small-number-counter;
+  position: relative;
+}
+.readout ol li {
+  counter-increment: small-number-counter;
+  margin: 0 0 .2em 0;
+  padding: 0;
+}
+/*
+.readout ol li::before {
+  content: counter(small-number-counter) "";
+  color: grey;
+  font-size: .7em; 
+  position: absolute;
+  left: 0px; 
+}
+*/
+.readout ol li { color: #ccc; opacity: 0.2; }
+.readout ol li:nth-last-child(5) { opacity: 0.3; }
+.readout ol li:nth-last-child(4) { opacity: 0.4; }
+.readout ol li:nth-last-child(3) { opacity: 0.5; }
+.readout ol li:nth-last-child(2) { opacity: 0.6; }
+.readout ol li:last-child {
+  opacity: 1 !important; 
+  color: #fff;
+}
+
+
+
+
+.team_box .unit_box {
+  margin-bottom: .5em; 
+  width: 95%; 
+  padding: 0;
+  position: relative;
+  box-sizing: border-box; 
+  border-radius: var(--borderradius_small); 
+  box-shadow:var(--box_shadow);
+}
+
+.team_box .unit_box .inner {
+  width: 100%; 
+  padding: .05em .5em .3em .5em;
+  box-sizing: border-box; 
+  border-radius: var(--borderradius_small); 
+}
+.team_box .unit_box .name .label {
+  text-decoration: none;
+}
+
+.team_box.A .unit_box {
+  text-align: left; 
+  float: left; 
+}
+.team_box.B .unit_box {
+  text-align: left; 
+  float: right;
+}
+
+
+.team_box.B .unit_box .inner { background-color: rgba(255,5,5, 0.2); }
+.team_box.A .unit_box .inner { background-color: rgba(0,55,255, 0.2); }
+
+
+.unit_box.next {
+  _border: 1px solid gold; 
+  _margin-left: 1em;
+  _margin-right: 1em; 
+  background-color: #35a !important;
+  box-shadow: var(--shadow_next) inset, var(--shadow_next) inset;
+}
+.unit_box.active .inner		{  }
+.unit_box.last .inner		{  }
+.unit_box.dead .inner		{ background-color: rgba(0,5,10,0.6) !important; }
+.unit_box.target .innner	{ border: 1px dotted red;  }
+
+.unit_box.type_NPCs 		{ color: orange; }
+.unit_box.type_Creatures	{ color: silver; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SPRITES */
+
+.img_form {
+  _image-rendering: crisp-edges;
+  _image-rendering: pixelated;
+}
+
+/* .sprite_box.full_width {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  top: -2em;
+  z-index: -300; 
+} */
+
+body.combat .sprite_box {
+  z-index: 333;
+  width: 100%;
+  box-sizing: border-box;
+  height: var(--puppetshow_height);
+  margin: 0 auto 15px auto;
+  border-top: 2px solid silver;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  _pointer-events: none;
+  _border-bottom: 2px solid silver;
+  _background-image: var(--bg_ruins);
+  
+  overflow: hidden;
+  border-radius:var(--borderradius_big); border-top-left-radius:0; border-top-right-radius:0;
+  box-shadow: var(--box_shadow)
+}
+.sprite_box:active {
+  overflow: visible;
+}
+.sprite_box .team {
+  position: absolute;
+  bottom: -.5em;
+  width: 50%;
+  height: var(--puppetshow_height);
+}
+.sprite_box .team.A {
+  left: 0;
+  transform: scaleX(-1);
+}
+.sprite_box .team.A .text {
+  transform: scaleX(-1);
+}
+.sprite_box .team.B {
+  right: 0;
+}
+.sprite_box .sprite_holder {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+	width: var(--puppet_width);
+	height: auto; 
+	overflow: visible;
+	text-align: right;
+}
+
+.sprite_box .u1 { right: calc(0 * var(--puppet_xoff)); }
+.sprite_box .u2 { right: calc(1 * var(--puppet_xoff)); }
+.sprite_box .u3 { right: calc(2 * var(--puppet_xoff)); }
+.sprite_box .u4 { right: calc(3 * var(--puppet_xoff)); }
+.sprite_box .u5 { right: calc(4 * var(--puppet_xoff)); }
+.sprite_box .u6 { right: calc(5 * var(--puppet_xoff)); }
+.sprite_box .u7 { right: calc(6 * var(--puppet_xoff)); }
+
+.sprite_box .img_form  {
+   width: auto;
+   max-width: none;
+}
+
+.sprite_box .img_form	{ height: calc(var(--puppetshow_height)* 0.85); }
+.sprite_box .trait_female .img_form		{ height: calc(var(--puppetshow_height)* 0.75); }
+.sprite_box .trait_boss .img_form		{ height: calc(var(--puppetshow_height)* 1.6); }
+.sprite_box .trait_huge .img_form		{ height: calc(var(--puppetshow_height)* 1.2); }
+.sprite_box .trait_tall .img_form		{ height: calc(var(--puppetshow_height)* 1.0); }
+.sprite_box .trait_short .img_form		{ height: calc(var(--puppetshow_height)* 0.7); }
+.sprite_box .trait_small .img_form		{ height: calc(var(--puppetshow_height)* 0.7); }
+.sprite_box .trait_tiny .img_form		{ height: calc(var(--puppetshow_height)* 0.5); }
+
+/*
+
+.sprite_box .u1 { right: calc(0 * var(--puppet_xoff)); }
+.sprite_box .u2 { right: calc(1 * var(--puppet_xoff)); }
+.sprite_box .u3 { right: calc(2 * var(--puppet_xoff)); }
+.sprite_box .u4 { right: calc(3 * var(--puppet_xoff)); }
+.sprite_box .u5 { right: calc(4 * var(--puppet_xoff)); }
+.sprite_box .u6 { right: calc(5 * var(--puppet_xoff)); }
+.sprite_box .u7 { right: calc(6 * var(--puppet_xoff)); }
+
+.sprite_box .sprite_holder .img_form  {
+   width: auto;
+   max-width: none;
+}
+
+
+.sprite_box .sprite_holder .img_form	{ height: calc(var(--puppetshow_height)* 0.85); }
+.sprite_box .trait_female .img_form		{ height: calc(var(--puppetshow_height)* 0.75); }
+.sprite_box .trait_boss .img_form		{ height: calc(var(--puppetshow_height)* 1.6); }
+.sprite_box .trait_huge .img_form		{ height: calc(var(--puppetshow_height)* 1.2); }
+.sprite_box .trait_tall .img_form		{ height: calc(var(--puppetshow_height)* 1.0); }
+.sprite_box .trait_short .img_form		{ height: calc(var(--puppetshow_height)* 0.7); }
+.sprite_box .trait_small .img_form		{ height: calc(var(--puppetshow_height)* 0.7); }
+.sprite_box .trait_tiny .img_form		{ height: calc(var(--puppetshow_height)* 0.5); }
+
+
+*/
+
+.sprite_box .sprite_holder .label {
+  position: absolute;
+  left: 30%;
+	border: 1px dotted silver;
+	background: black;
+	font-size: 12px;
+}
+
+.sprite_box .extra {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    width: 4em;
+    height: 4em;
+    background: var(--fx_diamond);
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+	filter: opacity(0);
+}
+
+
+
+
+/* SPRITEBOX STYLES AND ANIMATIONS */
+
+
+
+:root {
+  --filter_whited: saturate(0%) contrast(150%) brightness(500%);
+  --filter_redded: sepia(100%) saturate(400%) hue-rotate(-50deg);
+  --filter_ghost: saturate(0%) contrast(150%) brightness(500%) opacity(30%);
+  --filter_next: drop-shadow(0px 0px 4px var(--red));
+  --shadow_next: 0px 0px 2px #fff;
+}
+
+.sprite_holder					{ filter: brightness(100%); }
+.sprite_holder.active			{ z-index: 3; filter: brightness(110%); }
+.sprite_holder.next	.see_active	{ filter: var(--filter_next); }
+.sprite_holder.next				{ z-index: 4; filter: brightness(130%); }
+.sprite_holder.lowhealth .see_health		{ animation: fade_red 2.0s linear 0s infinite; }
+.sprite_holder.verylowhealth .see_health	{ animation: fade_red 1.0s linear 0s infinite; }
+.sprite_holder.target			{ z-index: 8; filter: none; }
+.sprite_holder.dead				{ z-index:-9; filter: var(--filter_ghost) }
+.sprite_holder.target.dead		{ z-index: 9; filter: none; }
+
+
+
+
+
+
+.sprite_holder img {
+	transform-origin: 50% 100%;
+	position: relative;
+}
+
+
+
+
+
+/* float stuff */
+.sprite_holder.trait_flight .see_health,
+.sprite_holder.trait_float .see_health 		{ transform: translateY(-20px) }
+.sprite_holder.trait_flight img,
+.sprite_holder.trait_float img	{ animation: float 3.0s ease-in-out 0s infinite }
+
+
+
+
+
+
+/* special anim testing */
+
+.sprite_holder.arrive		{ animation: arrive 3.0s ease-out 0s 1; }
+.turn_0 .sprite_box		{ animation: battle_start 3.0s ease-out 0s 1; }
+
+
+
+attack_low,
+.sprite_holder.attack.trait_female img		{ animation: attack_low 3.0s ease 0s 1;  }
+
+attack_dance,
+.sprite_holder.attack.trait_seductress img		{ animation: attack_dance 3.0s ease-in-out 0s 1;  }
+
+attack_range,
+.sprite_holder.attack.trait_archer img		{ animation: attack_aim 3.0s linear 0s 1;   }
+.sprite_holder.attack.trait_archer .extra		{ animation: fx_bolt 3.0s linear 0s 1; 
+    background-image: var(--fx_diamond);  }
+
+
+
+
+
+
+.sprite_holder.attack img		{ animation: attack 3.0s ease 0s 1; }
+.sprite_holder.hit img			{ animation: hit 3.0s ease 0s 1; }
+.sprite_holder.critical img		{ animation: critical 3.0s ease 0s 1; }
+.sprite_holder.miss img			{ animation: miss 3.0s ease 0s 1; }
+.sprite_holder.nodamage img		{ animation: nodamage 3.0s ease 0s 1; }
+.sprite_holder.target.dead img	{ filter: var(--filter_ghost) }
+.sprite_holder.target.dead img	{ animation: die 6.0s ease 0s 1; }
+
+
+
+
+
+
+
+
+/* UNITBOX ANIMATIONS */
+
+.unit_box.active { animation: pulse 0.3s linear 0.1s 1; }
+
+
+.unit_box.nodamage { animation: shake 0.3s linear var(--delay_unitbox) 1; }
+.unit_box.miss   { animation: shake 0.6s linear var(--delay_unitbox) 1; }
+.unit_box.hit    { animation: shake 0.1s linear var(--delay_unitbox) 4; }
+.unit_box.hit.dead { animation: shake 0.1s linear var(--delay_unitbox) 19; }
+
+
+
+
+
+
+
+

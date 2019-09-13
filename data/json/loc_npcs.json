@@ -1,0 +1,43 @@
+[
+	{
+		"id": "player",
+		"firstname": "Payer",
+		"lastname": "One",
+		"name": "Mainguy",
+		"description": "The main character.",
+		"level": 1, "xp":0,
+		"quotes": "silent",
+		"type": "NPCs", "category": "", "subcategory": "",
+		"traits": ['test'],
+		"stats": {
+		"speed":5, "dam_evade":20, "dam_thresh":1, "dam_resist":30, "crit_chance":75, "crit_dam":2, "attack":3, "hp":30, "hp_max":30, "xp":0 
+		}
+	},
+	{
+		"id": "kami_jester",
+		"firstname": "Quilan",
+		"lastname": "Heiru",
+		"name": "J",
+		"description": "A court jester who's edgy antics lost her her job and made her a pariah.",
+		"level": 1, "xp":0,
+		"quotes": "silent",
+		"type": "NPCs", "category": "", "subcategory": "",
+		"traits": ['female', 'tall'],
+		"stats": {
+		}
+	},
+	{
+		"id": "kami_jester",
+		"firstname": "Savigale",
+		"lastname": "t'Fae",
+		"name": "Savi",
+		"description": "",
+		"level": 1, "xp":0,
+		"quotes": "silent",
+		"type": "NPCs", "category": "", "subcategory": "",
+		"traits": ['female', 'tall'],
+		"stats": {
+		}
+	}
+
+]

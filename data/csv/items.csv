@@ -1,0 +1,8 @@
+id,name,category,type,subtype,description,traits,damage,damagetype,requirement,ammo,weight,cost,statuseffect,stats
+health1,Health Potion,,,,Heal one allie.,edible,,,,,,,,
+revive,Revive Potion,,,,Revive one allie.,edible,,,,,,,,
+bomb1,Bomb,,,,Explosive damage to all opponents.,throwable,,,,,,,,
+smokebomb,Smoke Bomb,,,,Make a quick gettaway with this.,throwable,,,,,,,,
+,No ID,,,,,,,,,,,,,
+noname,sadfas,,,,,,,,,,,,,
+asdf sd,,,,,,,,,,,,,,

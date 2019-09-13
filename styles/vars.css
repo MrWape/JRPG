@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css?family=Almendra');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+  --font-fancy: 'Almendra', serif;
+  --font: 'Roboto', sans-serif;
+  
+  --blue: #29d;
+  --red: #911;
+  --green: #191;
+  --yellow: #ec2;
+ 
+  --delay_unitbox: 1.5s;
+  --duration_attack: 1.5s;
+  
+  --battlescreen_width: 54em;
+  --puppet_range: -600px;
+  --puppet_width: 150px;
+  --puppet_xoff: 77px;
+  --puppetshow_height: 200px;
+  --readout_height: 250px;
+  
+  --borderradius_big: 15px;
+  --borderradius_small: 7px;
+  
+  --box_shadow: 1px 5px 7px var(--darken);
+  
+  --color_bar_bg: #5A0000;
+  --color_font: #eee;
+  --color_font_lightest: #fff;
+  
+  --color_jrpg: rgba(0,0,200,.7);
+  
+  
+  --darken: rgba(0,0,0,0.7);
+  --darkish: rgba(0,0,0,0.4);
+  --lighten: rgba(255,255,255,0.7);
+  --lightish: rgba(255,255,255,0.35);
+  
+  --portrait-size: 80px;
+  
+
+  
+
+
+  --icon_img: url('../images/misc/icons.png');
+  
+  
+  
+  --fx_ball: url('C:/Users/sketc/Documents/GitHub/JRPG/images/misc/fx_ball.png');
+  --fx_diamond: url('C:/Users/sketc/Documents/GitHub/JRPG/images/misc/fx_diamond.png');
+  
+  
+  
+  --go_north: url('C:/Users/sketc/Documents/GitHub/JRPG/images/misc/go_north.png');
+  --go_south: url('C:/Users/sketc/Documents/GitHub/JRPG/images/misc/go_south.png');
+  --go_east: url('C:/Users/sketc/Documents/GitHub/JRPG/images/misc/go_east.png');
+  --go_west: url('C:/Users/sketc/Documents/GitHub/JRPG/images/misc/go_west.png');
+  
+  
+  
+  
+  
+  
+  
+  --bg_ruins: url('../images/bg/ruins.jpg');
+  --bg_marble: url('../images/tiles/marble.png');
+  --map_bg: url('../images/misc/map_bg.png');
+  --bg_granite: url('../images/tiles/granite.jpg');
+}
+
+
+
+
+#passage-combatb .sprite_box  {	background-image: url('../images/bg/arena.png') }
+
+
+body.bg-arena 		{ background-image: url('../images/bg/arena.jpg') }
+body.bg-inn 		{ background-image: url('../images/bg/inn.jpg') }
+body.bg-inn-room 	{ background-image: url('../images/bg/inn-room.jpg') }
+body.bg-overworld	{ background-image: url('../images/bg/overworld.jpg') }
+body.bg-library	{ background-image: url('../images/bg/library.jpg') }
+body.bg-campsite	{ background-image: url('../images/bg/campsite.jpg') }
+
+
+
+
+
+
+
+
+

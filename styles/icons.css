@@ -1,0 +1,200 @@
+
+:root {
+  --icon: 16px;
+}
+
+
+.icon {
+  width: var(--icon); height: var(--icon);
+  background-image: var(--icon_img);
+  background-position: 0 0;
+  display: block;
+  background-position:    200px  200px }
+}
+
+/* ROW1 - damage types */
+
+.icon.fire	{ background-position:    0px  0px }
+.icon.water	{ background-position:  -16px  0px }
+.icon.earth	{ background-position:  -32px  0px }
+.icon.air	{ background-position:  -48px  0px }
+.icon.ice	{ background-position:  -64px  0px }
+.icon.elec	{ background-position:  -80px  0px }
+.icon.light	{ background-position:  -96px  0px }
+.icon.dark	{ background-position: -112px  0px }
+.icon.bash	{ background-position: -128px  0px }
+.icon.slash	{ background-position: -144px  0px }
+.icon.pierce{ background-position: -150px  0px }
+.icon.ap	{ background-position: -166px  0px }
+.icon.ap	{ background-position: -182px  0px }
+.icon.ap	{ background-position: -198px  0px }
+.icon.ap	{ background-position: -214px  0px }
+.icon.ap	{ background-position: -230px  0px }
+.icon.ap	{ background-position: -256px  0px }
+
+/* ROW2 - status effects */
+
+
+.icon.poison	{ background-position:	   0px	0px }
+.icon.charm	{ background-position:	 -16px	0px }
+.icon.angry	{ background-position:	 -32px	0px }
+.icon.	{ background-position:	 -48px	0px }
+.icon.	{ background-position:	 -64px	0px }
+.icon.	{ background-position:	 -80px	0px }
+.icon.	{ background-position:	 -96px	0px }
+.icon.	{ background-position:	-112px	0px }
+.icon.	{ background-position:	-128px	0px }
+.icon.	{ background-position:	-144px	0px }
+.icon.	{ background-position:	-150px	0px }
+.icon.	{ background-position:	-166px	0px }
+.icon.	{ background-position:	-182px	0px }
+.icon.	{ background-position:	-198px	0px }
+.icon.	{ background-position:	-214px	0px }
+.icon.	{ background-position:	-230px	0px }
+.icon.	{ background-position:	-256px	0px }
+
+
+/*
+love
+anger
+sadness
+sleep
+confusion
+happiness
+poison
+bleeding
+broken bone
+strong
+weak
+fast
+slow
+smart
+dumb
+horny
+*/
+
+
+
+
+
+/* ROW3 - item types */
+
+
+.icon.sword	{ background-position:	   0px	0px }
+.icon.mace	{ background-position:	 -16px	0px }
+.icon.axe	{ background-position:	 -32px	0px }
+.icon.bow	{ background-position:	 -48px	0px }
+.icon.	{ background-position:	 -64px	0px }
+.icon.	{ background-position:	 -80px	0px }
+.icon.	{ background-position:	 -96px	0px }
+.icon.	{ background-position:	-112px	0px }
+.icon.	{ background-position:	-128px	0px }
+.icon.	{ background-position:	-144px	0px }
+.icon.	{ background-position:	-150px	0px }
+.icon.	{ background-position:	-166px	0px }
+.icon.	{ background-position:	-182px	0px }
+.icon.	{ background-position:	-198px	0px }
+.icon.	{ background-position:	-214px	0px }
+.icon.	{ background-position:	-230px	0px }
+.icon.	{ background-position:	-256px	0px }
+
+
+/* ROW4 - stats */
+
+/*
+strength
+perception
+endurance
+charisma
+inelligence
+agiltiy
+luck
+
+evade
+resist
+chance
+damage
+hp
+xp
+ap
+sp
+*/
+
+
+
+
+
+
+/* ROW7 - dungeon map */
+
+.icon.player	{ background-position:	   0px	-96px }
+.icon.man	{ background-position:	 -16px	-96px }
+.icon.woman	{ background-position:	 -32px	-96px }
+.icon.boss	{ background-position:	 -48px	-96px }
+.icon.enemy	{ background-position:	 -64px	-96px }
+.icon.	{ background-position:	 -80px	-96px }
+.icon.	{ background-position:	 -96px	-96px }
+.icon.	{ background-position:	-112px	-96px }
+.icon.	{ background-position:	-128px	-96px }
+.icon.	{ background-position:	-144px	-96px }
+.icon.	{ background-position:	-150px	-96px }
+.icon.	{ background-position:	-166px	-96px }
+.icon.	{ background-position:	-182px	-96px }
+.icon.	{ background-position:	-198px	-96px }
+.icon.	{ background-position:	-214px	-96px }
+.icon.	{ background-position:	-230px	-96px }
+.icon.	{ background-position:	-256px	-96px }
+
+
+
+
+
+.icon.question	{ background-position:	   -112px	-112px }
+.icon.alert	{ background-position:	 -16px	-112px }
+.icon.chest	{ background-position:	 -32px	-112px }
+.icon.bag	{ background-position:	 -48px	-112px }
+.icon.key	{ background-position:	 -64px	-112px }
+.icon.	{ background-position:	 -80px	-112px }
+.icon.	{ background-position:	 -96px	-112px }
+.icon.	{ background-position:	-112px	-112px }
+.icon.	{ background-position:	-128px	-112px }
+.icon.	{ background-position:	-144px	-112px }
+.icon.	{ background-position:	-150px	-112px }
+.icon.	{ background-position:	-166px	-112px }
+.icon.	{ background-position:	-182px	-112px }
+.icon.	{ background-position:	-198px	-112px }
+.icon.	{ background-position:	-214px	-112px }
+.icon.	{ background-position:	-230px	-112px }
+.icon.	{ background-position:	-256px	-112px }
+
+
+
+
+
+.icon.	{ background-position:	   0px	0px }
+.icon.	{ background-position:	 -16px	0px }
+.icon.	{ background-position:	 -32px	0px }
+.icon.	{ background-position:	 -48px	0px }
+.icon.	{ background-position:	 -64px	0px }
+.icon.	{ background-position:	 -80px	0px }
+.icon.	{ background-position:	 -96px	0px }
+.icon.	{ background-position:	-112px	0px }
+.icon.	{ background-position:	-128px	0px }
+.icon.	{ background-position:	-144px	0px }
+.icon.	{ background-position:	-150px	0px }
+.icon.	{ background-position:	-166px	0px }
+.icon.	{ background-position:	-182px	0px }
+.icon.	{ background-position:	-198px	0px }
+.icon.	{ background-position:	-214px	0px }
+.icon.	{ background-position:	-230px	0px }
+.icon.	{ background-position:	-256px	0px }
+
+
+
+
+
+
+
+
+
+

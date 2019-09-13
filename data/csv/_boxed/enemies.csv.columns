@@ -1,0 +1,23 @@
+﻿<columns units="px">
+  <column name="NOTES" type="Text" />
+  <column name="id" type="Text" />
+  <column name="name" type="Text" />
+  <column name="category" type="Text" />
+  <column name="type" type="Text" />
+  <column name="subtype" type="Text" />
+  <column name="XP" type="Number" format="G" nulltext="-" alignment="Right" />
+  <column name="EVD" type="Number" format="G" nulltext="-" alignment="Right" />
+  <column name="ATK" type="Number" format="G" nulltext="-" alignment="Right" />
+  <column name="HP" type="Number" format="G" nulltext="-" alignment="Right" />
+  <column name="CRIT" type="Number" format="G" nulltext="-" alignment="Right" />
+  <column name="SPD" type="Number" format="G" nulltext="-" alignment="Right" />
+  <column name="DTHR" type="Number" format="G" nulltext="-" alignment="Right" />
+  <column name="DRES" type="Number" format="G" nulltext="-" alignment="Right" />
+  <column name="stats" type="Text" />
+  <column name="skills" type="Text" />
+  <column name="weakvs" type="Text" />
+  <column name="strongvs" type="Text" />
+  <column name="requirement" type="Text" />
+  <column name="effect" type="Text" />
+  <column name="description" type="Text" />
+</columns>

@@ -1,0 +1,24 @@
+﻿<columns units="px">
+  <column name="id" type="Text" />
+  <column name="name" type="Text" />
+  <column name="desc" type="Text" allowwrap="true" />
+  <column name="notes" type="Text" />
+  <column name="category" type="Text" />
+  <column name="subcategory" type="Text" />
+  <column name="hidden" type="Boolean" format="true;false" nulltext="-" alignment="Center" />
+  <column name="stat_mods" type="Text" />
+  <column name="Column 07" type="Text" />
+  <column name="Column 08" type="Text" />
+  <column name="Column 09" type="Text" />
+  <column name="Column 10" type="Text" />
+  <column name="Column 11" type="Text" />
+  <column name="Column 12" type="Text" />
+  <column name="Column 13" type="Text" />
+  <column name="Column 14" type="Text" />
+  <column name="Column 15" type="Text" />
+  <column name="Column 16" type="Text" />
+  <column name="Column 17" type="Text" />
+  <column name="Column 18" type="Text" />
+  <column name="Column 19" type="Text" />
+  <column name="Column 20" type="Text" />
+</columns>
